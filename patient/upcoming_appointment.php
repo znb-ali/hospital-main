@@ -2,25 +2,38 @@
 // Include the necessary files
 require_once 'connection.php';
 
-
-// Fetch success and error messages
+// Fetch success and error messages (if any)
 $success = isset($_SESSION['success']) ? $_SESSION['success'] : '';
 $error = isset($_SESSION['error']) ? $_SESSION['error'] : '';
 
 // Clear the session messages after displaying them
 unset($_SESSION['success']);
 unset($_SESSION['error']);
+
+// Query to fetch upcoming appointments
+$query = "SELECT * FROM `doc_patient_appointments` 
+          WHERE `patient_id` = ? 
+          AND `status` = 'approved' 
+          AND `appointment_date` >= CURDATE() 
+          ORDER BY `appointment_date` ASC";
+
+// Prepare and execute the query
+$stmt = $con->prepare($query);
+$stmt->bind_param("i", $patient_id);
+$stmt->execute();
+$result = $stmt->get_result();
+$appointments = $result->fetch_all(MYSQLI_ASSOC);
 ?>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Patient Dashboard</title>
-        <link rel="stylesheet" href="css/layout.css">
-        
-        <style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard - Upcoming Appointments</title>
+    <link rel="stylesheet" href="css/layout.css">
+    
+    <style>
     /* Adjustments for Main Content in the New Layout */
     .main-content {
         padding: 40px 20px;
@@ -93,10 +106,10 @@ unset($_SESSION['error']);
     .card .btn:hover {
         background-color:#bcddf7;
     }
-        </style>
-        <?php require_once "mainlinks.php"; ?>
-        <?php require_once "connection.php"; ?>
-    </head>
+    </style>
+
+    <?php require_once "mainlinks.php"; ?>
+</head>
 <body class="tt-magic-cursor">
 
 <!-- Preloader Start -->
@@ -114,40 +127,40 @@ unset($_SESSION['error']);
 </div>
 <!-- Magic Cursor End -->
 
-    <div class="dashboard_container">
-        <!-- Include the header file -->
-        <?php include('linkheader.php'); ?>
+<div class="dashboard_container">
+    <!-- Include the header file -->
+    <?php include('linkheader.php'); ?>
 
-        <div class="dashboard_main">
-            <!-- Sidebar -->
-            <?php include('side.php'); ?>
+    <div class="dashboard_main">
+        <!-- Sidebar -->
+        <?php include('side.php'); ?>
 
-            <!-- Main Content -->
-            <div class="dashboard_content_main">
-                <div class="main-content">
-                    <h1>Welcome to the Patient Dashboard</h1>
-                    <p>Manage hospital data, doctors, patients, and more from here.</p>
+        <!-- Main Content -->
+        <div class="dashboard_content_main">
+            <div class="main-content">
+                <h1>Upcoming Appointments</h1>
+                <p>View your upcoming approved appointments below:</p>
+
+                <!-- Display appointments -->
+                <?php if (count($appointments) > 0): ?>
                     <div class="card-container">
-                        <div class="card">
-                            <h2>Upcoming Appointments</h2>
-                            <p>View and manage your scheduled appointments.</p>
-                            <a href="upcoming_appointment.php" class="btn">View Details</a>
-                        </div>
-                        <div class="card">
-                            <h2>Medical Records</h2>
-                            <p>Access your medical history and documents.</p>
-                            <a href="patient_appointments.php" class="btn">View Records</a>
-                        </div>
-                        <div class="card">
-                            <h2>Account Settings</h2>
-                            <p>Update your profile and account information.</p>
-                            <a href="profile.php" class="btn">Edit Profile</a>
-                        </div>
+                        <?php foreach ($appointments as $appointment): ?>
+                            <div class="card">
+                                <h2>Appointment with Doctor ID: <?= htmlspecialchars($appointment['doctor_id']); ?></h2>
+                                <p>Date: <?= htmlspecialchars($appointment['appointment_date']); ?></p>
+                                <p>Time: <?= htmlspecialchars($appointment['appointment_time']); ?></p>
+                                <p>Status: <?= htmlspecialchars($appointment['status']); ?></p>
+                            </div>
+                        <?php endforeach; ?>
                     </div>
-                </div>
+                <?php else: ?>
+                    <p>No upcoming appointments found.</p>
+                <?php endif; ?>
             </div>
         </div>
     </div>
-        <?php require_once "jslinks.php"; ?>
-    </body>
-    </html>
+</div>
+
+<?php require_once "jslinks.php"; ?>
+</body>
+</html>
