@@ -86,7 +86,7 @@ $stmt_doctor->close();
 
     .main-content h1 {
         font-size: 28px;
-        color: #084d7b;
+        color:#113243;
         margin-bottom: 15px;
         text-align: center;
     }

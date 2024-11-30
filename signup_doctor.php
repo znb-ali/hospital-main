@@ -36,13 +36,78 @@ if (isset($_POST["btn_doctor"])) {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Care - Doctor Signup</title>
+    <title>Care - Login</title>
+    <?php require_once "mainlinks.php"; ?>
+    
+    <style>
+    /* Adjustments for Main Content in the New Layout */
+    .main-content {
+        padding: 40px 20px;
+        background-image:url(images/cultuer-2.jpg);
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .main-content h1 {
+        font-size: 28px;
+        color: #113243;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    /* Form Styling */
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .form-control:focus {
+        border-color: #084d7b;
+        box-shadow: 0 0 5px rgba(0, 77, 123, 0.5);
+    }
+
+    .btn {
+        background-color: #084d7b;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #04304e;
+    }
+
+    .alert-danger {
+        color: #721c24;
+        background-color: #f8d7da;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    </style>
     <?php require_once "mainlinks.php"; ?>
 </head>
 <body class="tt-magic-cursor">
@@ -61,13 +126,27 @@ if (isset($_POST["btn_doctor"])) {
     <div id="ball"></div>
 </div>
 <!-- Magic Cursor End -->
+<?php include('linkheader.php'); ?>
 
-<?php require_once "linkheader.php"; ?>
+    <!-- Subpage Header -->
+    <div class="subpage-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="subpage-header-box">
+                        <h1 class="text-anime-style-3">Login</h1>
+                        <ol class="breadcrumb wow fadeInUp">
+                            <li><a href="index.php">Home</a></li>
+                            <li>Login</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="container-xxl">
-    <div class="row">
-        <div class="col-lg-3"></div>
-        <div class="col-lg-9">
+        <!-- Main Content -->
+            <div class="main-content">
             <h1 class="my-4">Doctor Signup</h1>
             <form method="post" enctype="multipart/form-data">
                 <input type="text" name="doctor_name" placeholder="Doctor Name" class="form-control my-4" required>
@@ -102,10 +181,10 @@ if (isset($_POST["btn_doctor"])) {
                 <input type="file" name="file_name" class="form-control my-4" required>
                 <input type="submit" value="Doctor Add" name="btn_doctor" class="btn btn-outline-info">
             </form>
-        </div>
-    </div>
-</div>
 
+
+            </div>
+<?php require_once "footer.php"; ?>
 <?php require_once "jslinks.php"; ?>
 </body>
 </html>
