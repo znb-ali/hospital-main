@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST["appointment_btn"])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patient Dashboard - Book Appointents</title>
+    <title>Patient Portal - Book Appointents</title>
     <link rel="stylesheet" href="css/layout.css">
     <style>
 .main-content {

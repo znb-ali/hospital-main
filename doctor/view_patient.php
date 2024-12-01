@@ -53,7 +53,7 @@ if ($result_appointment->num_rows > 0) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor Dashboard - View Patient Details</title>
+    <title>Doctor Portal - View Patient Details</title>
     <link rel="stylesheet" href="css/layout.css">
 
     <?php require_once "mainlinks.php"; ?>

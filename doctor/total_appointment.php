@@ -35,7 +35,7 @@ $result = $stmt->get_result();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor Dashboard - Total Appointents</title>
+    <title>Doctor Portal - Total Appointents</title>
     <link rel="stylesheet" href="css/layout.css">
 
     <style>
