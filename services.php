@@ -145,7 +145,7 @@
                             </ul>
                         </div>
                         <div class="services-item-btn">
-                            <a href="show_by_specialization.php?id=9" class="btn-default">View Doctors</a>
+                            <a href="show_by_specialization.php?id=1" class="btn-default">View Doctors</a>
                         </div>
                     </div>
                     <!-- Our Service Item End -->
@@ -167,7 +167,7 @@
                             </ul>
                         </div>
                         <div class="services-item-btn">
-                            <a href="show_by_specialization.php?id=8" class="btn-default">View Doctors</a>
+                            <a href="show_by_specialization.php?id=4" class="btn-default">View Doctors</a>
                         </div>
                     </div>
                     <!-- Our Service Item End -->
@@ -189,7 +189,7 @@
                             </ul>
                         </div>
                         <div class="services-item-btn">
-                            <a href="show_by_specialization.php?id=10" class="btn-default">View Doctors</a>
+                            <a href="show_by_specialization.php?id=7" class="btn-default">View Doctors</a>
                         </div>
                     </div>
                     <!-- Our Service Item End -->
@@ -233,7 +233,7 @@
                             </ul>
                         </div>
                         <div class="services-item-btn">
-                            <a href="show_by_specialization.php?id=7" class="btn-default">View Doctors</a>
+                            <a href="show_by_specialization.php?id=5" class="btn-default">View Doctors</a>
                         </div>
                     </div>
                     <!-- Our Service Item End -->

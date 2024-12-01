@@ -124,10 +124,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="subpage-header-box">
-                        <h1 class="text-anime-style-3">Login</h1>
+                        <h1 class="text-anime-style-3">Signup</h1>
                         <ol class="breadcrumb wow fadeInUp">
                             <li><a href="index.php">Home</a></li>
-                            <li>Login</li>
+                            <li>signup</li>
                         </ol>
                     </div>
                 </div>

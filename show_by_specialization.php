@@ -42,52 +42,171 @@ if (!$sel) {
     <title>Doctors in <?php echo htmlspecialchars($specialization_name); ?> - Care</title>
     <link rel="stylesheet" href="path/to/bootstrap.min.css">
     <style>
-        .preloader {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background: #fff;
-            z-index: 9999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
 
-        .card-deck .card {
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
+/* Search Section */
+.search-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
 
-        .card-deck .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-        }
+.search-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #084d7b;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
-        .card img {
-            height: 180px;
-            object-fit: cover;
-        }
+.search-section select.form-select {
+    border: 2px solid #084d7b;
+    border-radius: 5px;
+    padding: 10px;
+    color: #555;
+}
 
-        .btn-outline-info {
-            color: #084d7b;
-            border-color: #084d7b;
-            transition: background-color 0.3s, color 0.3s;
-        }
+.search-section .btn-primary {
+    background-color: #084d7b;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
 
-        .btn-outline-info:hover {
-            background-color: #084d7b;
-            color: #fff;
-        }
+.search-section .btn-primary:hover {
+    background-color: #04304e;
+}
+
+/* Results Section */
+.results-section {
+    margin-top: 30px;
+}
+
+.results-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #084d7b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: left;
+}
+
+.card-body h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #084d7b;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.card-body p strong {
+    color: #04304e;
+    font-weight: 600;
+}
+
+.btn-sm {
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: #084d7b;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-sm:hover {
+    background-color: #04304e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-deck {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .search-section {
+        padding: 15px;
+    }
+
+    .search-section h2 {
+        font-size: 20px;
+    }
+
+    .results-section h2 {
+        font-size: 20px;
+    }
+}
 
         .no-results {
             text-align: center;
             padding: 50px 0;
         }
     </style>
-</head>
-<body>
+</head><body class="tt-magic-cursor">
+
+<!-- Preloader Start -->
 <div class="preloader">
-    <img src="images/new_care.png" alt="Loading...">
+    <div class="loading-container">
+        <div class="loading"></div>
+        <div id="loading-icon"><img src="images/new_care.png" alt=""></div>
+    </div>
 </div>
+<!-- Preloader End -->
+
+<!-- Magic Cursor Start -->
+<div id="magic-cursor">
+    <div id="ball"></div>
+</div>
+<!-- Magic Cursor End -->
+
 
 <?php require_once "linkheader.php"; ?>
 
@@ -99,7 +218,7 @@ if (!$sel) {
             <?php while ($row = mysqli_fetch_assoc($sel)): ?>
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="<?php echo $row['file_name'] ? "../" . $row['file_name'] : 'default-doctor.jpg'; ?>" 
+                        <img src="<?php echo $row['file_name'] ? htmlspecialchars($row['file_name']) : 'path/to/default-doctor.jpg'; ?>" 
                              class="card-img-top" 
                              alt="<?php echo htmlspecialchars($row['doctor_name']); ?>">
                         <div class="card-body">
@@ -112,7 +231,6 @@ if (!$sel) {
                                 <strong>Days Available:</strong> <?php echo htmlspecialchars($row['doctor_days']); ?><br>
                                 <strong>Timing:</strong> <?php echo htmlspecialchars($row['timing']); ?>
                             </p>
-                            <a href="appointment.php?id=<?php echo $row['id']; ?>" class="btn btn-outline-info">Book Appointment</a>
                         </div>
                     </div>
                 </div>
