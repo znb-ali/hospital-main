@@ -6,7 +6,7 @@
 					<!-- Logo Start -->
 					<div class="header-logo">
 						<a class="navbar-brand" href="index.php">
-						<img style=" width:70px; height : 80px;" src="images/final_care_logo.png"  class="logo" alt="">
+						<img style=" width:70px; height : 80px;" src="images/new_care.png"  class="logo" alt="">
 							
 						</a>
 					</div>
