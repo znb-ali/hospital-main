@@ -102,7 +102,7 @@
                 <div class="col-md-12">
                     <!-- Sub page Header start -->
                     <div class="subpage-header-box">
-                        <h1 class="text-anime-style-3">Specialization</h1>
+                        <h1 class="text-anime-style-3">Services</h1>
                         <ol class="breadcrumb wow fadeInUp">
                             <li><a href="index.php">Home</a></li>
                             <li>services</li>
@@ -264,6 +264,41 @@
         </div>
     </div>
     <!-- Our Services Section End -->
+
+	<!-- Cta Section Start -->
+	<div class="cta-box">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-8">
+					<!-- Cta Item Start -->
+					<div class="cta-item">
+						<!-- Icon Box Start -->
+						<div class="icon-box">
+							<img src="images/icon-appointment.svg" alt="">
+						</div>
+						<!-- Icon Box End -->
+
+						<!-- Cta Content Start -->
+						<div class="cta-content">
+							<h3 class="text-anime-style-3">Open For Appointments</h3>
+							<p class="wow fadeInUp" data-wow-delay="0.25s">we are delighted to announce that our doors are open, and we are now accepting appointments to serve you better.</p>
+						</div>
+						<!-- Cta Content End -->
+					</div>
+					<!-- Cta Item End -->
+				</div>
+
+				<div class="col-lg-4">
+					<!-- Cta Btn Start -->
+					<div class="cta-btn">
+						<a href="appointment.php" class="appointment-btn wow fadeInUp">make appointment <i class="fa-solid fa-calendar-days"></i></a>
+					</div>
+					<!-- Cta Btn End -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Cta Section End -->
 
 
     <!-- Our Culture Section Start -->

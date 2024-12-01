@@ -183,24 +183,161 @@
     </div>
     <!-- Appointment Booking Section End -->
 
-    <!-- Appointment Our Team Start -->
-    <div class="meet-our-team appointment-our-team">
+    <!-- Meet Our Team Start -->
+    <div class="meet-our-team">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-12">
                     <div class="section-title">
-                        <h3 class="wow fadeInUp">Our Best Doctor</h3>
+                        <h3 class="wow fadeInUp">our best doctor</h3>
                         <h2 class="text-anime-style-3">Meet Our Doctors.</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <!-- Team members here -->
-                <!-- (Keep the doctor profiles as they are) -->
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.25s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="images/team-5.jpg" alt="">
+                            </figure>
+
+                            <!-- Team Social List Start -->
+                            <div class="team-social-list">
+                                <ul>
+                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social List End -->
+                        </div>
+                        <!-- Team Image End -->
+
+                        <!-- Team Body Start -->
+                        <div class="team-body">
+                            <div class="team-content">
+                                <h3>family physician</h3>
+                                <h2><a href="about.php#">dr. elizabeth foster</a></h2>
+                                <p>Compassionate care for all ages.</p>
+                            </div>
+                        </div>
+                        <!-- Team Body End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.25s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="images/team-2.jpg" alt="">
+                            </figure>
+
+                            <!-- Team Social List Start -->
+                            <div class="team-social-list">
+                                <ul>
+                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social List End -->
+                        </div>
+                        <!-- Team Image End -->
+
+                        <!-- Team Body Start -->
+                        <div class="team-body">
+                            <div class="team-content">
+                                <h3>surgeon</h3>
+                                <h2><a href="about.php#">dr. david lee</a></h2>
+                                <p>Skillful hands, transforming lives.</p>
+                            </div>
+                        </div>
+                        <!-- Team Body End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.5s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="images/team-3.jpg" alt="">
+                            </figure>
+
+                            <!-- Team Social List Start -->
+                            <div class="team-social-list">
+                                <ul>
+                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social List End -->
+                        </div>
+                        <!-- Team Image End -->
+
+                        <!-- Team Body Start -->
+                        <div class="team-body">
+                            <div class="team-content">
+                                <h3>cardiologist</h3>
+                                <h2><a href="about.php#">dr. ava white</a></h2>
+                                <p>Mental wellness and guiding.</p>
+                            </div>
+                        </div>
+                        <!-- Team Body End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.75s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="images/team-4.jpg" alt="">
+                            </figure>
+
+                            <!-- Team Social List Start -->
+                            <div class="team-social-list">
+                                <ul>
+                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social List End -->
+                        </div>
+                        <!-- Team Image End -->
+
+                        <!-- Team Body Start -->
+                        <div class="team-body">
+                            <div class="team-content">
+                                <h3>dermatologist</h3>
+                                <h2><a href="about.php#">Dr. Daniel Brown</a></h2>
+                                <p>Focuses on skin, hair disorders.</p>
+                            </div>
+                        </div>
+                        <!-- Team Body End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
             </div>
         </div>
     </div>
-    <!-- Appointment Our Team End -->
+    <!-- Meet Our Team End -->
 
     <?php require_once "footer.php"; ?>
 

@@ -38,7 +38,6 @@
 	<?php require_once 'linkheader.php'?>
 
 
-
 	<!-- Header End -->
 	
 	<!-- Hero Section Start -->
@@ -86,6 +85,64 @@
 		</div>
 	</div>
 	<!-- Hero Section End -->
+		<!-- Contact Us Section Start -->
+		<div class="home-contact-us">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4">
+					<!-- Home Contact Start -->
+					<div class="home-contact-item highlighted-box wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="highlighted-box-title">
+                            <h2>Don't <strong>Hesitate </strong>To Contact us</h2>
+                        </div>
+                        <div class="appointment-wrap">
+                            <a class="appointment-btn" href="appointment.php">make appointment <i class="far fa-calendar-alt"></i> </a>
+                        </div>
+                    </div>
+					<!-- Home Contact End -->
+				</div>
+
+				<div class="col-lg-4 col-md-4">
+					<!-- Home Contact Item Start -->
+					<div class="home-contact-item box-border wow fadeInUp" data-wow-delay="0.25s">
+						<!-- contact Icon Start -->
+                        <div class="contact-icon">
+                            <img src="images/icon-home-contact-1.svg" alt="">
+                        </div>
+						<!-- Contact Icon End -->
+
+						<!-- Home Contact Content Start -->
+                        <div class="contact-content">
+                            <h3>need family health</h3>
+                            <p>we understand the importance of family health overall well-being.</p>
+                        </div>
+						<!-- Home Contact Content End -->
+                    </div>
+					<!-- Service Item End -->
+				</div>
+
+				<div class="col-lg-4 col-md-4">
+					<!-- Home Contact Item Start -->
+					<div class="home-contact-item wow fadeInUp" data-wow-delay="0.25s">
+						<!-- contact Icon Start -->
+                        <div class="contact-icon">
+                            <img src="images/icon-home-contact-2.svg" alt="">
+                        </div>
+						<!-- Contact Icon End -->
+
+						<!-- Home Contact Content Start -->
+                        <div class="contact-content">
+                            <h3>24 hours service</h3>
+                            <p>we take pride in offering 24-hour medical services to ensure that you.</p>
+                        </div>
+						<!-- Home Contact Content End -->
+                    </div>
+					<!-- Service Item End -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Contact Us Section End -->
 	
 	<!-- About Section Start -->
 	<div class="about-us">
