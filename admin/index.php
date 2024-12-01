@@ -197,7 +197,7 @@ while ($row = mysqli_fetch_assoc($result)) {
                         <div class="card">
                             <h2>Appointments</h2>
                             <p>Oversee and manage scheduled patient appointments.</p>
-                            <a href="appointments.php" class="btn">Manage Appointments</a>
+                            <a href="appointment.php" class="btn">Manage Appointments</a>
                         </div>
                         <div class="card">
                             <h2>Account Settings</h2>

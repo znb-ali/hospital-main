@@ -45,26 +45,13 @@ require_once 'connection.php';
 
 
                                 <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
-
-								
-
-
-
-
-
-
-
-
-
-
-
-                                <li class="nav-item submenu"><a class="nav-link" href="#">SignUp</a>
+                                       <li class="nav-item submenu"><a class="nav-link" href="#">SignUp</a>
                                     <ul>                                        
                                         <li class="nav-item"><a class="nav-link" href="signup_doctor.php">Doctor Sign-up</a></li>
 										<li class="nav-item"><a class="nav-link" href="signup_patient.php">Patient Sign-up</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item highlighted-menu"><a class="nav-link" href="signup_patient.php">Book Appointment<i class="fa-solid fa-calendar-days"></i></a></li>
+                                <li class="nav-item highlighted-menu"><a class="nav-link" href="appointment.php">Book Appointment<i class="fa-solid fa-calendar-days"></i></a></li>
                             </ul>
                         </div>
 					</div>

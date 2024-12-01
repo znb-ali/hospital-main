@@ -62,6 +62,9 @@
     <a class="nav-link active" href="doctor_management.php">Doctors Requests</a>
   </li>
   <li class="nav-item ">
+    <a class="nav-link active" href="appointments.php">Doc-Patient Appointments</a>
+  </li>
+  <li class="nav-item ">
     <a class="nav-link active" href="cities.php">Cities</a>
   </li>
   <li class="nav-item ">
