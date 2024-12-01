@@ -32,7 +32,7 @@ if (isset($_POST["btn_patient"])) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin - Add Patient</title>
+        <title>Admin Portal - Admin Add Patient</title>
         <link rel="stylesheet" href="css/layout.css">
         
         <style>

@@ -42,7 +42,7 @@ if (!$sel) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctors by Specialization</title>
+    <title>Care - Doctors by Specialization</title>
     <link rel="stylesheet" href="path/to/bootstrap.min.css"> <!-- Link to Bootstrap -->
     <style>
         /* CSS for three cards per row */

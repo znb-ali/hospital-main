@@ -24,7 +24,7 @@ if (isset($_POST["btn_add_sp"])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Specialization</title>
+    <title>Admin Portal - Add Specialization</title>
     <link rel="stylesheet" href="css/layout.css">
     
     <style>

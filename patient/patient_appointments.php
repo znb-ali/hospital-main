@@ -26,7 +26,7 @@ $result = $stmt->get_result();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Appointments</title>
+    <title>Patient Dashboard - My Appointments</title>
     <link rel="stylesheet" href="css/layout.css">
     <?php require_once "mainlinks.php"; ?>
     <style>

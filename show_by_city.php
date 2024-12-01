@@ -32,7 +32,7 @@ if (!$sel) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Care - Docctors By City</title>
     <style>
         /* CSS for three cards per row */
         .card-deck {

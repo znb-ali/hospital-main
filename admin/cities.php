@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cities</title>
+    <title>Admin Portal - Cities</title>
     <link rel="stylesheet" href="css/layout.css">
     <style>
         /* Adjustments for Main Content */
