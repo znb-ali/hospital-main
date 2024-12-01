@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="Awaiken">
-	<!-- Page Title -->
-	<title>Care - Contact</title>
-	
-	<?php
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Awaiken">
+    <!-- Page Title -->
+    <title>Care - Contact</title>
+    
+    <?php
     require_once "mainlinks.php";
     // require_once "connection.php";
     ?>
 </head>
 
 <body class="tt-magic-cursor">
-	
-	<!-- Preloader Start -->
-	<div class="preloader">
-		<div class="loading-container">
-			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/new_care.png" alt=""></div>
-		</div>
-	</div>
-	<!-- Preloader End -->
+    
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="images/new_care.png" alt=""></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
 
-	<!-- Magic Cursor Start -->
-	<div id="magic-cursor">
-		<div id="ball"></div>
-	</div>
-	<!-- Magic Cursor End -->
+    <!-- Magic Cursor Start -->
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+    <!-- Magic Cursor End -->
 
     <!-- Header Start -->
-	<?php require_once 'linkheader.php'?>
-	<!-- Header End -->
+    <?php require_once 'linkheader.php'?>
+    <!-- Header End -->
 
     <!-- Subpage Header Start -->
     <div class="subpage-header">
@@ -66,7 +66,7 @@
                     <!-- Google Map Iframe Start -->
                     <div class="google-map-iframe">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1300.3451!2d73.0479!3d33.6844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df1cfff48b03f1%3A0xb35c97e39db85c8f!2sIslamabad%2C%20Pakistan!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin"
                             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <!-- Google Map Iframe End -->
@@ -81,59 +81,59 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4">
-					<!-- Item Box Start -->
+                    <!-- Item Box Start -->
                     <div class="contact-item">
-						<!-- Icon Box Start -->
+                        <!-- Icon Box Start -->
                         <div class="icon-box">
                             <i class="fa-solid fa-phone"></i>
                         </div>
-						<!-- Icon Box End -->
-						
-						<!-- Box Content Start -->
+                        <!-- Icon Box End -->
+                        
+                        <!-- Box Content Start -->
                         <div class="contact-info-content">
                             <h3>Help Line</h3>
                             <p>(+0) 123 456 789</p>
                         </div>
-						<!-- Box Content End -->
+                        <!-- Box Content End -->
                     </div>
-					<!-- Item Box End -->
+                    <!-- Item Box End -->
                 </div>
 
                 <div class="col-md-4">
-					<!-- Item Box Start -->
+                    <!-- Item Box Start -->
                     <div class="contact-item">
-						<!-- Icon Box Start -->
+                        <!-- Icon Box Start -->
                         <div class="icon-box">
                             <i class="fas fa-envelope-open-text"></i>
                         </div>
-						<!-- Icon Box End -->
+                        <!-- Icon Box End -->
 
-						<!-- Box Content Start -->
+                        <!-- Box Content Start -->
                         <div class="contact-info-content">
                             <h3>Location</h3>
                             <p>Jl. Raya Kuta No.70, Kuta</p>
                         </div>
-						<!-- Box Content End -->
+                        <!-- Box Content End -->
                     </div>
                 </div>
 
                 <div class="col-md-4">
-					<!-- Item Box Start -->
+                    <!-- Item Box Start -->
                     <div class="contact-item">
-						<!-- Icon Box Start -->
+                        <!-- Icon Box Start -->
                         <div class="icon-box">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
-						<!-- Icon Box End -->
+                        <!-- Icon Box End -->
 
-						<!-- Box Content Start -->
+                        <!-- Box Content Start -->
                         <div class="contact-info-content">
                             <h3>Email Address</h3>
                             <p>healthcare@gmail.com</p>
                         </div>
-						<!-- Box Content End -->
+                        <!-- Box Content End -->
                     </div>
-					<!-- Item Box End -->
+                    <!-- Item Box End -->
                 </div>
             </div>
         </div>
@@ -184,7 +184,7 @@
 
                                 <div class="col-lg-12">
                                     <div class="contact-form-btn">
-										<button type="submit" class="btn-default">book now</button>
+                                        <button type="submit" class="btn-default">book now</button>
                                         <div id="msgSubmit" class="h3 hidden"></div>
                                     </div>
                                 </div>
@@ -198,14 +198,14 @@
     </div>
     <!-- Contact Form End -->
 
-	<!-- Footer Start -->
-	<?php
-	require_once "footer.php"
-	?>
-	<!-- Footer End -->
-	
+    <!-- Footer Start -->
+    <?php
+    require_once "footer.php"
+    ?>
+    <!-- Footer End -->
+    
   
-	<?php
+    <?php
     require_once "jslinks.php";
     // require_once "connection.php";
     ?>

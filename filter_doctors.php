@@ -110,7 +110,23 @@ if (!$sel) {
 
     </style>
 </head>
-<body>
+<body class="tt-magic-cursor">
+    
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="images/new_care.png" alt=""></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Magic Cursor Start -->
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+    <!-- Magic Cursor End -->
+
 
 <?php require_once "linkheader.php"; ?>
 
@@ -164,7 +180,6 @@ if (!$sel) {
                             <strong>Available:</strong> <?php echo $row["doctor_days"] ?? 'N/A'; ?><br>
                             <strong>Timing:</strong> <?php echo $row["timing"] ?? 'N/A'; ?>
                         </p>
-                        <a href="appointment.php?id=<?php echo $row['id']; ?>" class="btn btn-primary btn-sm">Book Appointment</a>
                     </div>
                 </div>
             <?php endwhile; ?>
