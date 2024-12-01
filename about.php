@@ -260,11 +260,11 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <!-- Team Member Item Start -->
-                    <div class="team-member-item wow fadeInUp">
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.25s">
                         <!-- Team Image Start -->
                         <div class="team-image">
                             <figure class="image-anime">
-                                <img src="images/team-1.jpg" alt="">
+                                <img src="images/team-5.jpg" alt="">
                             </figure>
 
                             <!-- Team Social List Start -->
