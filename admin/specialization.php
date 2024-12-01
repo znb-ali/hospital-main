@@ -1,12 +1,5 @@
 <?php
-// Establish database connection
-$con = mysqli_connect("localhost", "root", "", "hospital_management_system");
-
-// Check connection
-if (!$con) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
+require_once "connection.php";
 // Get logged-in admin details
 $admin_email = $_SESSION["admin"];
 $query = "SELECT name, email FROM reg WHERE email = ?";
