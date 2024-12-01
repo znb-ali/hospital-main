@@ -92,6 +92,8 @@ unset($_SESSION['error']);
 
     .card .btn:hover {
         background-color:#bcddf7;
+        color: #333;
+        border:#bcddf7 ;
     }
         </style>
         <?php require_once "mainlinks.php"; ?>

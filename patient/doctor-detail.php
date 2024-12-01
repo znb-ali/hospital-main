@@ -80,7 +80,7 @@ if (!$sel) {
     .btn-outline-info {
         margin-top: 10px;
         padding: 8px 20px;
-        background-color: #084d7b;
+        background-color: #113f56;
         color: #fff;
         text-transform: uppercase;
         border-radius: 20px;
@@ -91,12 +91,13 @@ if (!$sel) {
 
     .btn-outline-info:hover {
         background-color: #bcddf7;
+        color: #333;
     }
 
     
     .dashboard_content_main h1 {
         color: #084d7b;
-        font-size: 28px;
+        font-size: 32px;
         text-align:center;
         text-transform: uppercase;
         font-weight: bold;

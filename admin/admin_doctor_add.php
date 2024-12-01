@@ -100,7 +100,8 @@ button, input[type="submit"] {
 }
 
 button:hover, input[type="submit"]:hover {
-    background-color: #072c47;
+    background-color: #bcddf7;
+
 }
 
 /* Alert Styles */
@@ -210,7 +211,7 @@ button:hover, input[type="submit"]:hover {
                     }
                     ?>
                 <input type="file" name="file_name" class="form-control my-4" required>
-                <input type="submit" value="Doctor Add" name="btn_doctor" class="btn btn-outline-info">
+                <input type="submit" value="Doctor Add" name="btn_doctor" class="btn">
             </form>
 
                 </div>

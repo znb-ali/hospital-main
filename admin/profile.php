@@ -80,8 +80,9 @@ if (!$admin) {
         }
 
         .btn-edit:hover {
-            background-color: #055b80;
+            background-color: #bcddf7;
             transform: scale(1.05);
+            color: #333;
         }
 
         /* Responsive Styles */

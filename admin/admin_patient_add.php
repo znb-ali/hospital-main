@@ -87,7 +87,7 @@ form {
 }
 
 /* Button styling */
-.btn-outline-info {
+.btn_patient {
     background-color: #084d7b;
     color: white;
     padding: 12px 30px;
@@ -99,8 +99,9 @@ form {
 }
 
 /* Button hover effect */
-.btn-outline-info:hover {
-    background-color: #04304e;
+.btn_patient:hover {
+    background-color: #bcddf7;
+    color: black;
 }
 
 /* Responsive adjustments */
@@ -154,7 +155,7 @@ form {
         <input type="email" name="patient_email" placeholder="Patient Email" class="form-control my-3" required>
         <input type="text" name="patient_phone" placeholder="Patient Phone" class="form-control my-3" required>
         <input type="password" name="patient_password" placeholder="Patient Password" class="form-control my-3" required>
-        <button type="submit" name="btn_patient" class="btn btn-outline-info">Add Patient</button>
+        <button type="submit" name="btn_patient" class="btn_patient">Add Patient</button>
     </form>
                 </div>
             </div>

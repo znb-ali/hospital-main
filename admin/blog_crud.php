@@ -28,6 +28,21 @@
         text-align: center;
         margin-bottom: 25px;
     }
+    .btn_blog{
+        background-color: #084d7b;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+
+    }
+
+    .btn_blog:hover{
+        background-color: #bcddf7;
+        color: #333;
+    }
+    
 
         </style>
         <?php require_once "mainlinks.php"; ?>
@@ -63,7 +78,7 @@
                 <div class="main-content">
                    <h1>Blogs</h1>
                    
-<a href="blog_add.php" class="btn btn-outline-info">Add Blog</a>
+<a href="blog_add.php" class="btn_blog">Add Blog</a>
 
 
                    <table class="table">

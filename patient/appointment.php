@@ -139,20 +139,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST["appointment_btn"])) {
     margin: 6px 0;
 }
 
-.btn-outline-info {
+.btn_appointment {
     margin-top: 10px;
     padding: 8px 20px;
     background-color: #084d7b;
+    border: #084d7b;
     color: #fff;
     text-transform: uppercase;
-    border-radius: 20px;
+    border-radius: 15px;
     text-decoration: none;
     font-size: 14px;
     transition: background-color 0.3s ease;
 }
 
-.btn-outline-info:hover {
-    background-color: #bcddf7;
+.btn_appointment:hover {
+    background-color: #bcddf7 ;
+    color: #333;
+    border: #bcddf7 ;
 }
 
 .doctor-profile {
@@ -236,7 +239,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST["appointment_btn"])) {
                                 <input type="text" value="<?php echo htmlspecialchars($doctor_info["sp_name"]); ?>" disabled class="form-control">
                                 <input type="date" name="appointment_date" class="form-control" required>
                                 <input type="time" name="appointment_time" class="form-control" required>
-                                <button type="submit" name="appointment_btn"  class="btn-outline-info">Book Appointment</button>
+                                <button type="submit" name="appointment_btn"  class="btn_appointment">Book Appointment</button>
                             </form>
                         </div>
 

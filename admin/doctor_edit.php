@@ -52,131 +52,133 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin Portal - Edit Doctor</title>
-        <link rel="stylesheet" href="css/layout.css">
-        
-        <style>
-            /* General Styles for Main Content */
-.main-content {
-    padding: 40px 20px;
-    background-color: #f4f6f9;
-    min-height: 100vh;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* Heading Styling */
-.main-content h1 {
-    font-size: 32px;
-    color: #084d7b;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: bold;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal - Edit Doctor</title>
+    <link rel="stylesheet" href="css/layout.css">
 
-/* Form Styles */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
+    <style>
+        /* General Styles for Main Content */
+        .main-content {
+            padding: 40px 20px;
+            background-color: #f4f6f9;
+            min-height: 100vh;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-/* Input Field Styling */
-form .form-control {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333;
-    box-sizing: border-box;
-    transition: all 0.3s ease-in-out;
-}
+        /* Heading Styling */
+        .main-content h1 {
+            font-size: 32px;
+            color: #084d7b;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
 
-/* Focus State for Inputs */
-form .form-control:focus {
-    border-color: #084d7b;
-    outline: none;
-    box-shadow: 0px 0px 5px rgba(8, 77, 123, 0.3);
-}
+        /* Form Styles */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
 
-/* Dropdown Styling */
-form select.form-control {
-    appearance: none;
-    background: #f4f6f9;
-}
+        /* Input Field Styling */
+        form .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+            box-sizing: border-box;
+            transition: all 0.3s ease-in-out;
+        }
 
-/* File Upload Styling */
-form input[type="file"] {
-    border: 1px dashed #ccc;
-    padding: 10px;
-    background: #f9f9f9;
-    font-size: 14px;
-    text-align: center;
-    cursor: pointer;
-}
+        /* Focus State for Inputs */
+        form .form-control:focus {
+            border-color: #084d7b;
+            outline: none;
+            box-shadow: 0px 0px 5px rgba(8, 77, 123, 0.3);
+        }
 
-/* Submit Button Styling */
-form input[type="submit"] {
-    width: 100%;
-    padding: 12px;
-    font-size: 18px;
-    background-color: #084d7b;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
+        /* Dropdown Styling */
+        form select.form-control {
+            appearance: none;
+            background: #f4f6f9;
+        }
 
-form input[type="submit"]:hover {
-    background-color: #066ba6;
-}
+        /* File Upload Styling */
+        form input[type="file"] {
+            border: 1px dashed #ccc;
+            padding: 10px;
+            background: #f9f9f9;
+            font-size: 14px;
+            text-align: center;
+            cursor: pointer;
+        }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    form {
-        padding: 20px;
-    }
+        /* Submit Button Styling */
+        .btn_edit_doctor {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            background-color: #084d7b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
 
-    form .form-control {
-        font-size: 14px;
-    }
+        .btn_edit_doctor:hover {
+            background-color: #bcddf7;
+            color: #333;
+        }
 
-    form input[type="submit"] {
-        font-size: 16px;
-    }
-}
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            form {
+                padding: 20px;
+            }
 
-        </style>
-        <?php require_once "mainlinks.php"; ?>
-        <?php require_once "connection.php"; ?>
-    </head>
+            form .form-control {
+                font-size: 14px;
+            }
+
+            form input[type="submit"] {
+                font-size: 16px;
+            }
+        }
+    </style>
+    <?php require_once "mainlinks.php"; ?>
+    <?php require_once "connection.php"; ?>
+</head>
+
 <body class="tt-magic-cursor">
 
-<!-- Preloader Start -->
-<div class="preloader">
-    <div class="loading-container">
-        <div class="loading"></div>
-        <div id="loading-icon"><img src="images/new_care.png" alt=""></div>
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="images/new_care.png" alt=""></div>
+        </div>
     </div>
-</div>
-<!-- Preloader End -->
+    <!-- Preloader End -->
 
-<!-- Magic Cursor Start -->
-<div id="magic-cursor">
-    <div id="ball"></div>
-</div>
-<!-- Magic Cursor End -->
+    <!-- Magic Cursor Start -->
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+    <!-- Magic Cursor End -->
 
     <div class="dashboard_container">
         <!-- Include the header file -->
@@ -191,63 +193,64 @@ form input[type="submit"]:hover {
                 <div class="main-content">
                     <h1>Edit Doctor</h1>
                     <form method="post" enctype="multipart/form-data">
-                <!-- Doctor Name -->
-                <input type="text" name="doctor_name" value="<?= htmlspecialchars($doctor['doctor_name']) ?>" placeholder="Doctor Name" class="form-control my-4" required>
+                        <!-- Doctor Name -->
+                        <input type="text" name="doctor_name" value="<?= htmlspecialchars($doctor['doctor_name']) ?>" placeholder="Doctor Name" class="form-control my-4" required>
 
-                <!-- Doctor Email -->
-                <input type="email" name="doctor_email" value="<?= htmlspecialchars($doctor['doctor_email']) ?>" placeholder="Doctor Email" class="form-control my-4" required>
+                        <!-- Doctor Email -->
+                        <input type="email" name="doctor_email" value="<?= htmlspecialchars($doctor['doctor_email']) ?>" placeholder="Doctor Email" class="form-control my-4" required>
 
-                <!-- Doctor Phone -->
-                <input type="number" name="doctor_phone" value="<?= htmlspecialchars($doctor['doctor_phone']) ?>" placeholder="Doctor Phone" class="form-control my-4" required>
+                        <!-- Doctor Phone -->
+                        <input type="number" name="doctor_phone" value="<?= htmlspecialchars($doctor['doctor_phone']) ?>" placeholder="Doctor Phone" class="form-control my-4" required>
 
-                <!-- Doctor Days -->
-                <input type="text" name="doctor_days" value="<?= htmlspecialchars($doctor['doctor_days']) ?>" placeholder="Doctor Days" class="form-control my-4" required>
+                        <!-- Doctor Days -->
+                        <input type="text" name="doctor_days" value="<?= htmlspecialchars($doctor['doctor_days']) ?>" placeholder="Doctor Days" class="form-control my-4" required>
 
-                <!-- Doctor Time -->
-                <input type="text" name="doctor_time" value="<?= htmlspecialchars($doctor['timing']) ?>" placeholder="Doctor Time" class="form-control my-4" required>
+                        <!-- Doctor Time -->
+                        <input type="text" name="doctor_time" value="<?= htmlspecialchars($doctor['timing']) ?>" placeholder="Doctor Time" class="form-control my-4" required>
 
-                <!-- City Dropdown -->
-                <select name="doctor_city" class="form-control my-4" required>
-                    <option value="">Select City</option>
-                    <?php
-                    // Fetch cities from the database
-                    $query = "SELECT city_id, city_name FROM city";
-                    $result = $con->query($query);
+                        <!-- City Dropdown -->
+                        <select name="doctor_city" class="form-control my-4" required>
+                            <option value="">Select City</option>
+                            <?php
+                            // Fetch cities from the database
+                            $query = "SELECT city_id, city_name FROM city";
+                            $result = $con->query($query);
 
-                    // Loop through the cities and populate the dropdown
-                    while ($row = $result->fetch_assoc()) {
-                        $selected = ($row['city_id'] == $doctor['city']) ? 'selected' : '';
-                        echo "<option value='" . $row['city_id'] . "' $selected>" . $row['city_name'] . "</option>";
-                    }
-                    ?>
-                </select>
+                            // Loop through the cities and populate the dropdown
+                            while ($row = $result->fetch_assoc()) {
+                                $selected = ($row['city_id'] == $doctor['city']) ? 'selected' : '';
+                                echo "<option value='" . $row['city_id'] . "' $selected>" . $row['city_name'] . "</option>";
+                            }
+                            ?>
+                        </select>
 
-                <!-- Specialization Dropdown -->
-                <select name="doctor_sp" class="form-control my-4" required>
-                    <option value="">Select Specialization</option>
-                    <?php
-                    // Fetch specializations from the database
-                    $query = "SELECT sp_id, sp_name FROM specialization";
-                    $result = $con->query($query);
+                        <!-- Specialization Dropdown -->
+                        <select name="doctor_sp" class="form-control my-4" required>
+                            <option value="">Select Specialization</option>
+                            <?php
+                            // Fetch specializations from the database
+                            $query = "SELECT sp_id, sp_name FROM specialization";
+                            $result = $con->query($query);
 
-                    // Loop through the specializations and populate the dropdown
-                    while ($row = $result->fetch_assoc()) {
-                        $selected = ($row['sp_id'] == $doctor['specialization_id']) ? 'selected' : '';
-                        echo "<option value='" . $row['sp_id'] . "' $selected>" . $row['sp_name'] . "</option>";
-                    }
-                    ?>
-                </select>
+                            // Loop through the specializations and populate the dropdown
+                            while ($row = $result->fetch_assoc()) {
+                                $selected = ($row['sp_id'] == $doctor['specialization_id']) ? 'selected' : '';
+                                echo "<option value='" . $row['sp_id'] . "' $selected>" . $row['sp_name'] . "</option>";
+                            }
+                            ?>
+                        </select>
 
-                <!-- File Upload (optional) -->
-                <input type="file" name="file_name" class="form-control my-4">
+                        <!-- File Upload (optional) -->
+                        <input type="file" name="file_name" class="form-control my-4">
 
-                <!-- Submit Button -->
-                <input type="submit" value="Update Doctor" name="btn_doctor" class="btn btn-outline-info">
-            </form>
+                        <!-- Submit Button -->
+                        <input type="submit" value="Update Doctor" name="btn_doctor" class="btn_edit_doctor">
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-        <?php require_once "jslinks.php"; ?>
-    </body>
-    </html>
+    <?php require_once "jslinks.php"; ?>
+</body>
+
+</html>

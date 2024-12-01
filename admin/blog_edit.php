@@ -42,17 +42,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 $con->close(); // Close the database connection
 ?>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin Portal - Edit Blog</title>
-        <link rel="stylesheet" href="css/layout.css">
-        
-        <style>
-  /* Main Content */
-  .main-content {
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal - Edit Blog</title>
+    <link rel="stylesheet" href="css/layout.css">
+
+    <style>
+        /* Main Content */
+        .main-content {
             padding: 40px 20px;
             background-color: #f4f6f9;
             min-height: 100vh;
@@ -79,7 +80,8 @@ $con->close(); // Close the database connection
             margin-bottom: 20px;
         }
 
-        .form-group input, .form-group textarea {
+        .form-group input,
+        .form-group textarea {
             width: 100%;
             padding: 12px;
             border: 1px solid #ddd;
@@ -91,7 +93,7 @@ $con->close(); // Close the database connection
             height: 200px;
         }
 
-        .form-group button {
+        .btn_blog_changes {
             background-color: #084d7b;
             color: white;
             border: none;
@@ -100,34 +102,36 @@ $con->close(); // Close the database connection
             cursor: pointer;
         }
 
-        .form-group button:hover {
-            background-color: #045081;
+        .btn_blog_changes:hover {
+            background-color: #bcddf7;
+            color: #333;
         }
 
         /* Image Upload */
         .form-group input[type="file"] {
             padding: 5px;
         }
-        </style>
-        <?php require_once "mainlinks.php"; ?>
-        <?php require_once "connection.php"; ?>
-    </head>
+    </style>
+    <?php require_once "mainlinks.php"; ?>
+    <?php require_once "connection.php"; ?>
+</head>
+
 <body class="tt-magic-cursor">
 
-<!-- Preloader Start -->
-<div class="preloader">
-    <div class="loading-container">
-        <div class="loading"></div>
-        <div id="loading-icon"><img src="images/new_care.png" alt=""></div>
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="images/new_care.png" alt=""></div>
+        </div>
     </div>
-</div>
-<!-- Preloader End -->
+    <!-- Preloader End -->
 
-<!-- Magic Cursor Start -->
-<div id="magic-cursor">
-    <div id="ball"></div>
-</div>
-<!-- Magic Cursor End -->
+    <!-- Magic Cursor Start -->
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+    <!-- Magic Cursor End -->
 
     <div class="dashboard_container">
         <!-- Include the header file -->
@@ -142,28 +146,29 @@ $con->close(); // Close the database connection
                 <div class="main-content">
                     <h1>Edit Blog</h1>
                     <form action="blog_edit.php?id=<?php echo $id; ?>" method="POST">
-                <label for="title">Title:</label><br>
-                <input type="text" name="title" value="<?php echo htmlspecialchars($row['title']); ?>" required class="form-control"><br>
+                        <label for="title">Title:</label><br>
+                        <input type="text" name="title" value="<?php echo htmlspecialchars($row['title']); ?>" required class="form-control"><br>
 
-                <label for="content">Content:</label><br>
-                <textarea name="content" rows="10" required class="form-control"><?php echo htmlspecialchars($row['content']); ?></textarea><br>
+                        <label for="content">Content:</label><br>
+                        <textarea name="content" rows="10" required class="form-control"><?php echo htmlspecialchars($row['content']); ?></textarea><br>
 
-                <label for="author">Author:</label><br>
-                <input type="text" name="author" value="<?php echo htmlspecialchars($row['author']); ?>" required class="form-control"><br>
+                        <label for="author">Author:</label><br>
+                        <input type="text" name="author" value="<?php echo htmlspecialchars($row['author']); ?>" required class="form-control"><br>
 
-                <label for="status">Status:</label><br>
-                <select name="status" class="form-control" required>
-                    <option value="DRAFT" <?php if ($row['status'] == 'DRAFT') echo 'selected'; ?>>Draft</option>
-                    <option value="PUBLISHED" <?php if ($row['status'] == 'PUBLISHED') echo 'selected'; ?>>Published</option>
-                </select><br>
+                        <label for="status">Status:</label><br>
+                        <select name="status" class="form-control" required>
+                            <option value="DRAFT" <?php if ($row['status'] == 'DRAFT') echo 'selected'; ?>>Draft</option>
+                            <option value="PUBLISHED" <?php if ($row['status'] == 'PUBLISHED') echo 'selected'; ?>>Published</option>
+                        </select><br>
 
-                <button type="submit" class="form-group">Save Changes</button>
-            </form>
+                        <button type="submit" class="btn_blog_changes">Save Changes</button>
+                    </form>
 
                 </div>
             </div>
         </div>
     </div>
-        <?php require_once "jslinks.php"; ?>
-    </body>
-    </html>
+    <?php require_once "jslinks.php"; ?>
+</body>
+
+</html>

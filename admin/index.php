@@ -117,7 +117,8 @@ while ($row = mysqli_fetch_assoc($result)) {
     }
 
     .card .btn:hover {
-        background-color: #04304e;
+        background-color: #bcddf7;
+        color: black;
     }
     /* Analytics Section */
     .analytics-section {

@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,25 +30,41 @@
             text-align: center;
             margin-bottom: 25px;
         }
+
+        .btn_add_city {
+            background-color: #084d7b;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn_add_city:hover{
+        background-color: #bcddf7;
+        color: #333;
+    }
+    
     </style>
     <?php require_once "mainlinks.php"; ?>
 </head>
+
 <body class="tt-magic-cursor">
 
-<!-- Preloader Start -->
-<div class="preloader">
-    <div class="loading-container">
-        <div class="loading"></div>
-        <div id="loading-icon"><img src="images/new_care.png" alt=""></div>
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="images/new_care.png" alt=""></div>
+        </div>
     </div>
-</div>
-<!-- Preloader End -->
+    <!-- Preloader End -->
 
-<!-- Magic Cursor Start -->
-<div id="magic-cursor">
-    <div id="ball"></div>
-</div>
-<!-- Magic Cursor End -->
+    <!-- Magic Cursor Start -->
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+    <!-- Magic Cursor End -->
 
     <div class="dashboard_container">
         <!-- Include the header file -->
@@ -60,37 +77,37 @@
             <!-- Main Content -->
             <div class="dashboard_content_main">
                 <div class="main-content">
-                <h1 class="my-4">Manage Cities</h1>
-                <a href="add_city.php" class="btn btn-outline-info">Add City</a>
-                <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">ID</th>
-      <th scope="col">City Name</th>
-      <th scope="col">Edit</th>
-      <th scope="col">Delete</th>
-     </tr>
-  </thead>
-  <tbody>
-<?php
-  $query = "select * from city";
-  $sel = mysqli_query($con, $query);
-  while($row = mysqli_fetch_assoc($sel))
-  {
-?>
-    <tr>
-      <th scope="row"><?php echo $row["city_id"] ?></th>
-      <th scope="row"><?php echo $row["city_name"] ?></th>
-      <td><a href="edit_city.php?city_id=<?php echo $row['city_id']; ?>" class="btn btn-outline-info">EDIT</a></td>
-      <td><a href="delete_city.php?city_id=<?php echo $row['city_id']; ?>" class="btn btn-outline-warning" onclick="return confirm('Are you sure you want to delete this city?');">DELETE</a></td>
-    </tr>
-    <?php } ?>
-  </tbody>
-</table>
+                    <h1 class="my-4">Manage Cities</h1>
+                    <a href="add_city.php" class="btn_add_city">Add City</a>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">City Name</th>
+                                <th scope="col">Edit</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $query = "select * from city";
+                            $sel = mysqli_query($con, $query);
+                            while ($row = mysqli_fetch_assoc($sel)) {
+                            ?>
+                                <tr>
+                                    <th scope="row"><?php echo $row["city_id"] ?></th>
+                                    <th scope="row"><?php echo $row["city_name"] ?></th>
+                                    <td><a href="edit_city.php?city_id=<?php echo $row['city_id']; ?>" class="btn btn-outline-info">EDIT</a></td>
+                                    <td><a href="delete_city.php?city_id=<?php echo $row['city_id']; ?>" class="btn btn-outline-warning" onclick="return confirm('Are you sure you want to delete this city?');">DELETE</a></td>
+                                </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
     <?php require_once "jslinks.php"; ?>
 </body>
+
 </html>

@@ -75,7 +75,7 @@ if (isset($_POST["btn_add_city"])) {
         box-shadow: 0 0 5px rgba(0, 77, 123, 0.5);
     }
 
-    .btn {
+    .btn_add_city {
         background-color: #084d7b;
         color: white;
         padding: 12px 20px;
@@ -86,9 +86,10 @@ if (isset($_POST["btn_add_city"])) {
         transition: background-color 0.3s ease;
     }
 
-    .btn:hover {
-        background-color: #04304e;
-    }
+    .btn_add_city:hover {
+        background-color: #bcddf7;
+        color: #333;  
+      }
 
     .alert-danger {
         color: #721c24;
@@ -134,7 +135,7 @@ if (isset($_POST["btn_add_city"])) {
                 <h1>Add City</h1>
                 <form method="post">
                     <input type="text" name="city_name" placeholder="City Name" class="form-control my-4" required>
-                    <button type="submit" name="btn_add_city" class="btn">Add City</button>
+                    <button type="submit" name="btn_add_city" class="btn_add_city">Add City</button>
                 </form>
             </div>
         </div>

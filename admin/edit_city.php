@@ -82,7 +82,7 @@ body, html {
 
 .main-content h1 {
     font-size: 28px;
-    color: #084d7b;
+    color: #113f56;
     margin-bottom: 15px;
     text-align: center;
     font-weight: bold;
@@ -133,7 +133,8 @@ body, html {
 }
 
 .main-content .btn:hover {
-    background-color: #04304e;
+    background-color: #bcddf7;
+    color: #333;
 }
 
 .main-content .btn:active {

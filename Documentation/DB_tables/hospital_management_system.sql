@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 27, 2024 at 07:32 PM
+-- Generation Time: Dec 01, 2024 at 09:39 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -45,7 +45,9 @@ INSERT INTO `blogs` (`id`, `title`, `content`, `image`, `author`, `status`, `cre
 (38, 'Understanding Heart Diseases: Types, Causes, Symptoms, and Prevention', 'What Are Heart Diseases?\r\n\r\nHeart diseases refer to conditions that impair the heart\'s ability to function efficiently. The most common types include:\r\nCoronary Artery Disease (CAD): Blockages in the coronary arteries due to plaque buildup, reducing blood flow to the heart.\r\nHeart Attack: Also known as myocardial infarction, it occurs when a coronary artery is completely blocked, cutting off blood supply to part of the heart muscle.\r\nHeart Failure: The heart becomes weak and cannot pump blood effectively.\r\nArrhythmias: Abnormal heart rhythms, such as atrial fibrillation or tachycardia.\r\nCongenital Heart Defects: Structural problems in the heart present at birth.\r\n\r\nCommon Causes of Heart Diseases:\r\nSeveral factors contribute to the development of heart diseases:\r\nUnhealthy Lifestyle Choices: Poor diet, lack of exercise, smoking, and excessive alcohol consumption.\r\nHigh Blood Pressure: Increases the strain on the heart and arteries.\r\nHigh Cholesterol Levels: Leads to plaque buildup in arteries.\r\nDiabetes: Damages blood vessels and increases the risk of CVD.\r\nObesity: Adds stress to the heart and raises blood pressure and cholesterol levels.\r\nFamily History: Genetics can play a role in susceptibility to heart diseases.\r\n', '6746269fa6f6a-heart_blog.jpg', 'Dr. Sania Hassan', 'published', '2024-11-26 19:50:55'),
 (39, ' Understanding Lung Disorders: Causes, Symptoms, and Prevention', 'Common Lung Disorders:\r\n1. Asthma: Chronic inflammation of airways causing wheezing, coughing, and shortness of breath.\r\n2. Chronic Obstructive Pulmonary Disease (COPD): Includes emphysema and chronic bronchitis, often linked to smoking.\r\n3. Pneumonia: Infection that inflames air sacs in one or both lungs.\r\n4. Tuberculosis (TB): A contagious bacterial infection affecting the lungs.\r\n5. Lung Cancer: Uncontrolled cell growth in lung tissues, often linked to smoking or environmental toxins.\r\n\r\nSymptoms to Watch For:\r\n. Persistent cough\r\n. Shortness of breath\r\n. Chest pain \r\n. Wheezing\r\nSeek medical advice if symptoms persist or worsen.\r\n\r\nPrevention Tips:\r\n1. Avoid Smoking: The leading cause of many lung diseases.\r\n2. Stay Active: Exercise strengthens lung capacity.\r\n3. Minimize Exposure: Avoid pollutants and allergens.\r\n4. Vaccinate: Protect against flu and pneumonia.\r\n5. Healthy Diet: Support lung health with fruits, vegetables, and hydration.\r\n\r\nConclusion:\r\nLung health is crucial for overall well-being. Recognize the signs of lung disorders early and adopt a healthy lifestyle to protect your respiratory system. Prioritize your breathing—it’s the essence of life!', '674626ffdc522-lungs_blog.jpg', 'Dr. Hassan Raza', 'published', '2024-11-26 19:52:31'),
 (40, 'Understanding Kidney Failure: Causes, Symptoms, and Prevention', 'Kidney failure, also known as renal failure, occurs when the kidneys lose their ability to filter waste and excess fluids from the blood effectively. This condition can lead to serious health complications if left untreated.\r\n\r\nTypes of Kidney Failure\r\n1. Acute Kidney Failure: A sudden loss of kidney function, often caused by severe injury, infection, or dehydration.\r\n2. Chronic Kidney Disease (CKD): Gradual loss of kidney function over time, often due to conditions like diabetes or hypertension.\r\n\r\nCommon Causes\r\n. Diabetes: High blood sugar levels damage kidney tissues.\r\n. Hypertension: High blood pressure stresses the kidneys.\r\n. Infections: Severe or recurring infections can harm kidney function.\r\n. Toxins: Prolonged use of certain medications or exposure to toxins. \r\n. Kidney Stones: Persistent obstructions can lead to damage.\r\n\r\nSymptoms\r\n. Fatigue and weakness\r\n. Swelling in the legs, feet, or ankles (edema)\r\n. Reduced urine output\r\n. Shortness of breath\r\n. Nausea or vomiting\r\n. Persistent itching\r\n\r\nPrevention Tips\r\n1. Control Blood Pressure and Diabetes: Regularly monitor and manage these conditions.\r\n2. Stay Hydrated: Drink adequate water to support kidney health.\r\n3. Avoid Excess Salt: Reduce sodium intake in your diet.\r\n4. Limit Alcohol and Smoking: Both can contribute to kidney damage.\r\n5. Regular Checkups: Early detection of kidney issues improves outcomes.\r\n\r\nConclusion\r\nKidney failure is a serious condition but can often be prevented or managed with a healthy lifestyle and early medical intervention. Protect your kidneys—they play a vital role in maintaining overall health.', '6746278a8f268-kidney_blog.jpg', 'Dr. Muhammad Shafique', 'published', '2024-11-26 19:54:50'),
-(41, 'Understanding Cancer: Types, Causes, Symptoms, and Prevention', 'Cancer is a group of diseases characterized by the uncontrolled growth and spread of abnormal cells in the body. If untreated, it can invade surrounding tissues and organs, potentially leading to life-threatening complications.\r\n\r\nTypes of Cancer\r\nCancer can affect nearly any part of the body. Common types include:\r\n1. Lung Cancer: Often linked to smoking or exposure to pollutants.\r\n2. Breast Cancer: Frequently affects women, but men can develop it too.\r\n3. Prostate Cancer: A common cancer in men, affecting the prostate gland.\r\n4. Skin Cancer: Caused by prolonged exposure to UV rays.\r\n5. Colon and Rectal Cancer (Colorectal Cancer): Associated with dietary habits and genetics.\r\n6. Leukemia: A cancer of blood-forming tissues, including the bone marrow.\r\n\r\nCauses\r\n. Cancer is caused by mutations in the DNA of cells. These mutations can result from:\r\n. Lifestyle Factors: Smoking, excessive alcohol consumption, poor diet, lack of exercise.\r\n. Environmental Factors: Exposure to harmful chemicals, radiation, and pollutants.\r\n. Genetics: Family history of certain types of cancer.\r\n. Infections: Certain viruses (e.g., HPV, Hepatitis B and C) are linked to cancer.\r\n\r\nCommon Symptoms\r\nThe symptoms of cancer vary depending on its type and stage but may include:\r\n. Unexplained weight loss\r\n. Persistent fatigue\r\n. Unusual lumps or swelling\r\n. Changes in the skin (e.g., new moles or changes in existing ones)\r\n. Chronic pain\r\n. Persistent cough or difficulty swallowing\r\n. Abnormal bleeding or discharge\r\nIf you notice persistent or unusual symptoms, consult a healthcare professional promptly.\r\n\r\nPrevention Tips\r\n1. Avoid Tobacco: Smoking and tobacco use are major cancer risk factors.\r\n2. Healthy Diet: Eat plenty of fruits, vegetables, and whole grains; limit processed foods and red meats.\r\n3. Stay Physically Active: Regular exercise helps maintain a healthy weight and reduces cancer risk.\r\n4. Protect Your Skin: Use sunscreen and avoid excessive sun exposure to prevent skin cancer.\r\n5. Get Vaccinated: Vaccines like HPV and Hepatitis B can reduce cancer risk.\r\n6. Limit Alcohol: Excessive alcohol consumption increases cancer risk.\r\n7. Regular Screenings: Early detection through screenings (e.g., mammograms, colonoscopies) can save lives.\r\n\r\nTreatment Options\r\n. Cancer treatment depends on the type and stage of the disease. Common approaches include:\r\n. Surgery: Removing the tumor or affected tissue.\r\n. Radiation Therapy: Using high-energy rays to kill cancer cells.\r\n. Chemotherapy: Using drugs to target and destroy cancer cells.\r\n. Immunotherapy: Boosting the immune system to fight cancer.\r\n. Targeted Therapy: Drugs that target specific cancer cell genes or proteins.\r\n\r\nConclusion\r\nCancer is a serious disease, but advances in medical science have improved early detection, treatment, and survival rates. A healthy lifestyle, regular checkups, and awareness of risk factors can go a long way in preventing and managing cancer.', '674627e4d5967-cancer_blog.jpg', 'Dr. Hassan Ali', 'published', '2024-11-26 19:56:20');
+(41, 'Understanding Cancer: Types, Causes, Symptoms, and Prevention', 'Cancer is a group of diseases characterized by the uncontrolled growth and spread of abnormal cells in the body. If untreated, it can invade surrounding tissues and organs, potentially leading to life-threatening complications.\r\n\r\nTypes of Cancer\r\nCancer can affect nearly any part of the body. Common types include:\r\n1. Lung Cancer: Often linked to smoking or exposure to pollutants.\r\n2. Breast Cancer: Frequently affects women, but men can develop it too.\r\n3. Prostate Cancer: A common cancer in men, affecting the prostate gland.\r\n4. Skin Cancer: Caused by prolonged exposure to UV rays.\r\n5. Colon and Rectal Cancer (Colorectal Cancer): Associated with dietary habits and genetics.\r\n6. Leukemia: A cancer of blood-forming tissues, including the bone marrow.\r\n\r\nCauses\r\n. Cancer is caused by mutations in the DNA of cells. These mutations can result from:\r\n. Lifestyle Factors: Smoking, excessive alcohol consumption, poor diet, lack of exercise.\r\n. Environmental Factors: Exposure to harmful chemicals, radiation, and pollutants.\r\n. Genetics: Family history of certain types of cancer.\r\n. Infections: Certain viruses (e.g., HPV, Hepatitis B and C) are linked to cancer.\r\n\r\nCommon Symptoms\r\nThe symptoms of cancer vary depending on its type and stage but may include:\r\n. Unexplained weight loss\r\n. Persistent fatigue\r\n. Unusual lumps or swelling\r\n. Changes in the skin (e.g., new moles or changes in existing ones)\r\n. Chronic pain\r\n. Persistent cough or difficulty swallowing\r\n. Abnormal bleeding or discharge\r\nIf you notice persistent or unusual symptoms, consult a healthcare professional promptly.\r\n\r\nPrevention Tips\r\n1. Avoid Tobacco: Smoking and tobacco use are major cancer risk factors.\r\n2. Healthy Diet: Eat plenty of fruits, vegetables, and whole grains; limit processed foods and red meats.\r\n3. Stay Physically Active: Regular exercise helps maintain a healthy weight and reduces cancer risk.\r\n4. Protect Your Skin: Use sunscreen and avoid excessive sun exposure to prevent skin cancer.\r\n5. Get Vaccinated: Vaccines like HPV and Hepatitis B can reduce cancer risk.\r\n6. Limit Alcohol: Excessive alcohol consumption increases cancer risk.\r\n7. Regular Screenings: Early detection through screenings (e.g., mammograms, colonoscopies) can save lives.\r\n\r\nTreatment Options\r\n. Cancer treatment depends on the type and stage of the disease. Common approaches include:\r\n. Surgery: Removing the tumor or affected tissue.\r\n. Radiation Therapy: Using high-energy rays to kill cancer cells.\r\n. Chemotherapy: Using drugs to target and destroy cancer cells.\r\n. Immunotherapy: Boosting the immune system to fight cancer.\r\n. Targeted Therapy: Drugs that target specific cancer cell genes or proteins.\r\n\r\nConclusion\r\nCancer is a serious disease, but advances in medical science have improved early detection, treatment, and survival rates. A healthy lifestyle, regular checkups, and awareness of risk factors can go a long way in preventing and managing cancer.', '674627e4d5967-cancer_blog.jpg', 'Dr. Hassan Ali', 'published', '2024-11-26 19:56:20'),
+(45, ' Autism Spectrum Disorder (ASD): Understanding the Condition', 'Autism Spectrum Disorder (ASD) is a developmental disorder that affects a person\'s ability to communicate, interact socially, and engage in repetitive behaviors. It\'s considered a \"spectrum\" because it encompasses a wide range of symptoms and severity levels, meaning no two individuals with autism are alike.\r\n\r\nSigns and Symptoms of Autism\r\nAutism\'s symptoms typically appear in early childhood, often before the age of 3, and can include:\r\n\r\nSocial Communication Challenges\r\n\r\nDifficulty understanding or interpreting social cues such as body language, tone of voice, or facial expressions.\r\nLimited ability to start or maintain conversations.\r\nDifficulty making eye contact or showing interest in social interactions.\r\nRepetitive Behaviors\r\n\r\nEngaging in repetitive movements (e.g., hand-flapping, rocking).\r\nInsistence on sameness, routines, or rituals (e.g., eating the same foods every day, lining up toys).\r\nIntense focus on specific topics or interests, sometimes to the exclusion of everything else.\r\nSensory Sensitivities\r\n\r\nOver- or under-sensitivity to sensory stimuli like light, sound, textures, or smells.\r\nDifficulty tolerating certain fabrics, loud noises, or bright lights.\r\nDelayed Developmental Milestones\r\n\r\nDelayed speech or language development.\r\nChallenges with motor coordination and fine motor skills.\r\nUnusual or Intense Interests\r\n\r\nStrong focus on particular activities or objects, often to the point of obsession.\r\nCauses of Autism\r\nThe exact cause of autism is still not fully understood, but researchers believe it involves a combination of genetic and environmental factors:\r\n\r\nGenetic Factors: Certain genes may increase the risk of autism. It tends to run in families, suggesting a genetic predisposition.\r\nEnvironmental Factors: Some studies suggest that factors like prenatal exposure to certain chemicals, maternal infections, or complications during birth may increase the likelihood of autism, though these factors alone do not cause the condition.\r\nDiagnosis\r\nDiagnosing autism typically involves a comprehensive evaluation by a team of specialists, including:\r\n\r\nPediatricians or Family Doctors: Initial screenings to identify early signs of autism.\r\nDevelopmental Psychologists: Assessment of cognitive and behavioral development.\r\nSpeech and Language Therapists: Evaluating communication abilities.\r\nPsychiatrists or Psychologists: Diagnosing associated conditions such as anxiety or ADHD that often co-occur with autism.\r\nEarly diagnosis is key to providing appropriate interventions that can help improve the quality of life for children with autism.\r\n\r\nTreatment and Interventions\r\nWhile there is no cure for autism, a variety of interventions and therapies can help individuals with ASD lead fulfilling lives:\r\n\r\nBehavioral Therapy\r\n\r\nApplied Behavior Analysis (ABA): A well-known therapeutic approach that encourages positive behaviors and discourages harmful or disruptive ones.\r\nEarly Intervention Programs: Intensive therapies during early childhood can significantly improve outcomes in terms of communication and social skills.\r\nSpeech and Language Therapy\r\n\r\nHelps individuals improve communication skills, whether verbal or non-verbal, and develop social language skills.\r\nOccupational Therapy\r\n\r\nHelps individuals develop daily living skills, like dressing, feeding, and other self-care activities, as well as coping with sensory sensitivities.\r\nSocial Skills Training\r\n\r\nHelps individuals learn how to interact with others, understand social cues, and build relationships.\r\nMedication\r\n\r\nWhile there is no medication specifically for autism, medications may be prescribed to manage symptoms like anxiety, depression, or ADHD, which often co-occur with autism.\r\nSpecial Education Programs\r\n\r\nMany children with autism benefit from tailored educational programs that focus on their specific learning needs, whether in mainstream schools with support or in specialized schools.\r\nFamily Support and Counseling\r\n\r\nFamilies may benefit from counseling, support groups, or parent training to help manage the challenges of raising a child with autism.\r\nLiving with Autism\r\nAutism is a lifelong condition, but many individuals with ASD lead successful and independent lives with the right support and interventions. The key to success is early intervention, a personalized approach to treatment, and a supportive environment.\r\n\r\nAutism Spectrum and Individual Differences\r\nSince autism is a spectrum, the needs and challenges of individuals can vary greatly. Some individuals with autism may be highly intelligent and independent, while others may require ongoing support throughout their lives. Early interventions, community resources, and societal understanding can go a long way in ensuring that individuals with autism have the tools they need to succeed.\r\n', '674a36d9dcbb0-autisam_blog2.jpg', 'Dr. Zameer Jaffri', 'published', '2024-11-29 21:49:13'),
+(46, 'Understanding Brain Disorders: What You Need to Know', 'Brain disorders can affect anyone, at any age, and in various ways. These disorders can range from temporary issues like headaches to more serious conditions like Alzheimer’s disease or stroke. Understanding the different types of brain disorders is key to recognizing symptoms early and seeking proper treatment.\r\n\r\nWhat Are Brain Disorders?\r\nBrain disorders refer to conditions that affect the structure or function of the brain, impacting a person’s ability to think, move, or feel in normal ways. These disorders can be neurological, affecting the nervous system, or psychiatric, linked to mental health. Some conditions are genetic, while others are caused by injury, infection, or the natural aging process.\r\n\r\nCommon Brain Disorders\r\nAlzheimer\'s Disease\r\nAlzheimer\'s is a neurodegenerative condition that primarily affects memory and cognitive abilities. Early signs include forgetfulness, confusion, and difficulty with daily tasks. While there\'s no cure, early diagnosis can help manage symptoms and improve quality of life.\r\n\r\nParkinson\'s Disease\r\nParkinson’s disease affects movement and can lead to tremors, stiffness, and difficulty with coordination. It results from the gradual loss of dopamine-producing brain cells. Medications and therapy can help manage symptoms.\r\n\r\nStroke\r\nA stroke occurs when there is a blockage or rupture of a blood vessel in the brain, leading to a lack of oxygen. Symptoms include sudden numbness, weakness, confusion, or difficulty speaking. Immediate medical attention is crucial for recovery.\r\n\r\nEpilepsy\r\nEpilepsy is a neurological condition characterized by recurrent seizures caused by abnormal electrical activity in the brain. Seizures can vary in severity, and treatment often involves medication to control the episodes.\r\n\r\nMigraines\r\nMigraines are severe, often debilitating headaches accompanied by nausea, light sensitivity, and sometimes visual disturbances. Triggers can include stress, certain foods, or hormonal changes, and they can be managed with lifestyle changes and medications.\r\n\r\nThe Importance of Early Diagnosis\r\nEarly detection of brain disorders is crucial to managing symptoms and preventing further complications. If you or a loved one experience persistent changes in memory, mood, or movement, it’s important to consult with a healthcare professional.\r\n\r\nLiving with a Brain Disorder\r\nManaging a brain disorder often requires a multi-faceted approach, including medication, therapy, lifestyle adjustments, and support. With the right care, people living with brain disorders can lead fulfilling lives.\r\n\r\nBrain health is essential, and staying informed about the signs and symptoms of common disorders can help you take proactive steps toward treatment and management.\r\n', '674a37dbb62c0-blog_brain.jpg', 'Dr. Sania Hassan', 'published', '2024-11-29 21:53:31');
 
 -- --------------------------------------------------------
 
@@ -65,7 +67,8 @@ CREATE TABLE `city` (
 INSERT INTO `city` (`city_id`, `city_name`) VALUES
 (2, 'Lahore'),
 (3, 'Islamabad '),
-(9, 'Multan');
+(9, 'Multan'),
+(12, 'Karachi');
 
 -- --------------------------------------------------------
 
@@ -93,12 +96,14 @@ CREATE TABLE `doctor_add` (
 --
 
 INSERT INTO `doctor_add` (`id`, `doctor_name`, `doctor_email`, `doctor_phone`, `doctor_days`, `timing`, `password`, `file_name`, `status`, `created_at`, `city`, `specialization_id`) VALUES
-(28, 'doctor', 'doctor@gmail.com', '2566523233', 'monday to sunday', '9 to 5', '$2y$10$oSPoRbUVesYCB15OJEJt8.SjEQwyOOiK8tubVo950DnSbZNtsYGOK', 'image/Screenshot 2023-06-29 025448.png', 'approved', '2024-11-17 11:09:34', 2, 3),
-(30, 'doctor2', 'doctor2@gmail.com', '226537562', 'MWF', '7 am to 12 pm', '$2y$10$6MyPWfPBES4b6WdkE9DwN.s6nnYGRTpZS.2ikmdYtjnXfJgektff2', 'image/p2.png', 'approved', '2024-11-17 11:33:47', 2, 3),
-(31, 'doctor3', 'doctor3@gmail.com', '7546328', 'MWF', '8 am to 8 pm', '$2y$10$y.YcZOue5D0uVt/A9ichl./ZtnD05Pc2p9eV18z43HqebketLueF6', 'image/sc2.png', 'rejected', '2024-11-18 09:50:29', 9, 1),
-(34, 'maha', 'maha@gmail.com', '15245412121', 'Mon-Fri', '7 to 11', '$2y$10$uoA1JU5zo9ohqh0nSuZQG.KkMeOE39lFaLSKArt3qcJXtw.I7wTzK', 'image/about-footer-img.jpg', 'approved', '2024-11-27 18:11:38', 2, 3),
-(35, 'Dr Hassan Ali', 'hassanali@gmail.com', '03158745756', 'Mon-Fri', '6 to 9', '$2y$10$B5jfetdVer1MU//0.xWhsuV0bgHpqcybvrJttScjTbrFcnqbJxi9W', 'image/author-3.jpg', 'approved', '2024-11-27 18:24:34', 9, 5),
-(36, 'Dr. Muhammad Shafique', 'muhammadshafique@gmail.com', '03058871258', 'Mon - Wed', '7 to 11', '$2y$10$4Vu2oVSnSWcfkDKutJ81P.hEatGh9DbmqiHymRwZ2O5jjfKJyytMG', 'image/author-4.jpg', 'approved', '2024-11-27 18:27:17', 3, 1);
+(35, 'Dr Hassan Ali', 'drhassan@gmail.com', '03158745756', 'Mon-Fri', '6:00 to 9:00', '$2y$10$B5jfetdVer1MU//0.xWhsuV0bgHpqcybvrJttScjTbrFcnqbJxi9W', 'image/author-3.jpg', 'approved', '2024-11-27 18:24:34', 9, 3),
+(36, 'Dr. Muhammad Shafique', 'drmuhammad@gmail.com', '03058871258', 'Mon - Wed', '7:00 to 11:00', '$2y$10$4Vu2oVSnSWcfkDKutJ81P.hEatGh9DbmqiHymRwZ2O5jjfKJyytMG', 'image/author-4.jpg', 'approved', '2024-11-27 18:27:17', 3, 1),
+(39, 'Dr. Sana Adeel', 'drsana@gmail.com', '03122215447', 'Saturday and Sunday ', '8:00 to 10:00', '$2y$10$y7OC4cXUbP7KJC8Atrmp4eg.DgOlCsspzA078OmW2oH1mUP2SgvXC', 'image/author-1.jpg', 'approved', '2024-11-29 20:21:00', 2, 1),
+(40, 'Dr. Wajiha Naqvi', 'drwajiha@gmail.com', '03118753694', 'Mon - Wed', '3:00 to 5:00', '$2y$10$6/mCn596Vxl4OWaktTJ3yeCzbFJ4CL8Dw28EIrepnzwG5AxKN7cjG', 'image/team-6.jpg', 'approved', '2024-11-29 20:29:19', 12, 5),
+(41, 'Dr. Zahid Kareem', 'drzahid@gmail.com', '03067796311', 'Mon-Fri', '8:00 to 10:00', '$2y$10$B0rRPx3DMOuCWJzWa9SYEuwiMzyLoPZql8uqaeLBAfh1O7MwlxqUW', 'image/team-4.jpg', 'approved', '2024-11-29 20:38:53', 3, 1),
+(42, 'Dr. Tahira Meer', 'drtahira@gmail.com', '03159631554', 'Mon-Fri', '4:00 to 6:00', '$2y$10$YW1OJl5b9jjjCCmKLk4ymugTo0MJtB0WeCaRvSoQ1jqB/EVat85MS', 'image/team-6.jpg', 'approved', '2024-11-29 21:00:05', 3, 4),
+(43, 'Dr. Imran Mehmood', 'drimran@gmail.com', '03458521556', 'Thursday - Friday ', '6:00 to 9:00', '$2y$10$ep3hIaauedZB6BghQZeKGOesE6Ccu1Z7T6TdeaA5gwpwfAwOD7eym', 'image/team-2.jpg', 'approved', '2024-11-29 21:02:47', 12, 5),
+(44, 'Dr. Nazia Shakeel', 'drnazia@gmail.com', '03318845677', 'Mon-Fri', '8:00 to 10:00', '$2y$10$0sgNdjEZts0g.gkDgoZKeuO4Vrfx6WXW9lvrhOQcN31jaz4xKZ4yu', 'image/team-8.jpg', 'approved', '2024-11-29 21:12:57', 2, 6);
 
 -- --------------------------------------------------------
 
@@ -115,22 +120,6 @@ CREATE TABLE `doc_patient_appointments` (
   `status` enum('pending','approved','rejected') DEFAULT 'pending',
   `status_message` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `doc_patient_appointments`
---
-
-INSERT INTO `doc_patient_appointments` (`id`, `patient_id`, `doctor_id`, `appointment_date`, `appointment_time`, `status`, `status_message`) VALUES
-(34, 12, 28, '2022-09-15', '03:40:00', 'rejected', NULL),
-(35, 12, 28, '2022-10-15', '03:51:00', 'approved', NULL),
-(36, 12, 30, '2022-09-15', '02:50:00', 'pending', NULL),
-(37, 12, 30, '2023-10-15', '03:51:00', 'rejected', NULL),
-(38, 12, 30, '2023-10-16', '03:55:00', 'rejected', NULL),
-(39, 12, 30, '2023-10-16', '03:58:00', 'approved', NULL),
-(40, 12, 28, '2023-10-16', '04:20:00', 'pending', NULL),
-(41, 12, 30, '2020-10-16', '03:20:00', 'approved', NULL),
-(42, 12, 28, '2023-10-17', '03:14:00', 'rejected', NULL),
-(43, 12, 28, '2324-02-02', '05:05:00', 'pending', NULL);
 
 -- --------------------------------------------------------
 
@@ -153,9 +142,7 @@ CREATE TABLE `patient_reg` (
 
 INSERT INTO `patient_reg` (`id`, `patient_name`, `patient_age`, `patient_email`, `patient_phone`, `patient_password`) VALUES
 (12, 'Maha Zehra', 20, 'maha@gmail.com', '03258741384', 'patient'),
-(18, 'saba Khan', 25, 'sabakhan@gmail.com', '0312 545421748', 'saba123'),
-(19, 'M Hamza', 38, 'hamza@gmail.com', '0306 121754212', 'hamza123'),
-(20, 'Bushra', 15, 'bushra@gmail.com', '0311 4789521', '$2y$10$wy8yh1AONvk999u6ftv3nuINL2snNoUfBZrFEftYcoqhwia/F2WqO');
+(19, 'M Hamza', 38, 'hamza@gmail.com', '0306 121754212', 'hamza123');
 
 -- --------------------------------------------------------
 
@@ -193,10 +180,11 @@ CREATE TABLE `specialization` (
 --
 
 INSERT INTO `specialization` (`sp_id`, `sp_name`) VALUES
-(1, 'Surgeon '),
-(3, 'Neurosurgeon '),
-(4, 'Dentist'),
-(5, 'cardiologist ');
+(1, 'Endocrinologists '),
+(3, 'Neurologists'),
+(4, 'Pathologists'),
+(5, 'Cardiologist '),
+(6, 'Pediatricians ');
 
 --
 -- Indexes for dumped tables
@@ -256,19 +244,19 @@ ALTER TABLE `specialization`
 -- AUTO_INCREMENT for table `blogs`
 --
 ALTER TABLE `blogs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `city`
 --
 ALTER TABLE `city`
-  MODIFY `city_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `city_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `doctor_add`
 --
 ALTER TABLE `doctor_add`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `doc_patient_appointments`
@@ -292,7 +280,7 @@ ALTER TABLE `reg`
 -- AUTO_INCREMENT for table `specialization`
 --
 ALTER TABLE `specialization`
-  MODIFY `sp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `sp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Constraints for dumped tables

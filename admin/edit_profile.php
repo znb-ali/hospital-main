@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         .edit-form h1 {
             font-size: 24px;
-            color: #084d7b;
+            color: #113243;
             margin-bottom: 20px;
             text-align: center;
         }
@@ -102,8 +102,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .btn-submit:hover {
-            background-color: #055b80;
+            background-color: #bcddf7;
             transform: scale(1.05);
+            color: #333;
         }
 
         .error-message {

@@ -134,7 +134,7 @@ $result_appointments = $stmt_appointments->get_result();
         <!-- Main Content -->
         <div class="dashboard_content_main">
             <div class="main-content">
-            <h1>Approved Appointments for Dr. <?php echo $doctor['doctor_name']; ?></h1>
+            <h1>Approved Appointments for  <?php echo $doctor['doctor_name']; ?></h1>
         <table class="table table-bordered">
             <thead>
                 <tr>
