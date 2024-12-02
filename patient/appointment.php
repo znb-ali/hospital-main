@@ -234,12 +234,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST["appointment_btn"])) {
                                 <input type="text" value="<?php echo htmlspecialchars($patient_info["patient_name"]); ?>" disabled class="form-control">
                                 <input type="number" value="<?php echo htmlspecialchars($patient_info["patient_age"]); ?>" disabled class="form-control">
                                 <input type="email" value="<?php echo htmlspecialchars($patient_info["patient_email"]); ?>" disabled class="form-control">
-                                <input type="number" value="<?php echo htmlspecialchars($patient_info["patient_phone"]); ?>" disabled class="form-control">
+                                <input type="text" value="<?php echo htmlspecialchars($patient_info["patient_phone"] ?? 'N/A'); ?>" disabled class="form-control"> <!-- Fixed Field -->
                                 <input type="text" value="<?php echo htmlspecialchars($doctor_info["doctor_name"]); ?>" disabled class="form-control">
                                 <input type="text" value="<?php echo htmlspecialchars($doctor_info["sp_name"]); ?>" disabled class="form-control">
                                 <input type="date" name="appointment_date" class="form-control" required>
                                 <input type="time" name="appointment_time" class="form-control" required>
-                                <button type="submit" name="appointment_btn"  class="btn_appointment">Book Appointment</button>
+                                <button type="submit" name="appointment_btn" class="btn_appointment">Book Appointment</button>
                             </form>
                         </div>
 
