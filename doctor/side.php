@@ -1,4 +1,52 @@
 <style>
+/* Sidebar Styling */
+.sidebar {
+    width: 200px; /* Increased width for better space */
+    background-color: #04304e;
+    color: #fff;
+    padding-top: 20px;
+    height: 100%;
+    overflow-y: auto;
+    padding-left: 10px; /* Increased padding for better spacing */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Added shadow for a more distinct look */
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 20px; /* Increased padding for more clickable area */
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 12px; /* Increased margin for spacing between links */
+    transition: background-color 0.3s, padding-left 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #69b0efa9;
+    padding-left: 30px; /* Added padding animation for a sliding effect */
+}
+
+/* Profile Section Styling */
+.sidebar .profile-section {
+    text-align: center;
+    padding: 20px 0; /* Increased padding for better profile section */
+    border-bottom: 1px solid #084d7b;
+    margin-bottom: 20px; /* Increased margin to give more space */
+}
+
+.sidebar .profile-section h4 {
+    font-size: 18px; /* Increased font size for visibility */
+    margin: 10px 0; /* Adjusted margin for spacing */
+    color: #fff;
+}
+
+.sidebar .profile-section p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 0;
+    word-wrap: break-word; /* Ensures email breaks properly if too long */
+}
+
 /* Profile Image Styling */
 .sidebar .profile-image {
     width: 90px; /* Increased width of profile image */
@@ -9,75 +57,18 @@
     margin-bottom: 15px; /* More space between image and text */
 }
 
-/* Sidebar Styling */
-.sidebar {
-    width: 250px; /* Wider sidebar for better spacing */
-    background-color: #04304e; /* Darker shade for a more modern look */
-    color: #fff;
-    padding: 20px 10px; /* Consistent padding */
-    height: 100vh; /* Full height for a fixed layout */
-    overflow-y: auto; /* Scrollable if content overflows */
-    position: fixed; /* Stays fixed on the screen */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+/* Navbar Links Styling */
+.navbar-nav {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px; /* Added margin for spacing above navbar */
 }
 
-/* Sidebar Links */
-.sidebar a {
-    display: block;
-    padding: 12px 20px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    margin-bottom: 15px; /* Adds more space between links */
-    border-radius: 5px; /* Rounded corners for links */
-    transition: all 0.3s ease;
+.nav-item {
+    margin-bottom: 10px; /* Added margin for spacing between items */
 }
 
-.sidebar a:hover {
-    background-color: #084d7b; /* Darker hover effect */
-    color: #e3e3e3; /* Lightened text on hover */
-}
 
-/* Profile Section Styling */
-.sidebar .profile-section {
-    text-align: center;
-    padding: 15px 0;
-    border-bottom: 2px solid #084d7b; /* Thicker border for separation */
-    margin-bottom: 20px;
-}
-
-.sidebar .profile-section h4 {
-    font-size: 18px;
-    margin: 10px 0 5px;
-    color: #fff; /* Consistent color for text */
-    font-weight: bold; /* Bold name */
-}
-
-.sidebar .profile-section p {
-    font-size: 14px;
-    color: #ccc;
-    margin: 0;
-    word-wrap: break-word; /* Ensures email breaks properly */
-    font-style: italic; /* Makes the email visually distinct */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 200px; /* Narrower sidebar on smaller screens */
-        padding: 15px 5px;
-    }
-
-    .sidebar .profile-image {
-        width: 80px;
-        height: 80px; /* Smaller profile image */
-    }
-
-    .sidebar a {
-        font-size: 14px; /* Smaller font for links */
-        padding: 10px 15px;
-    }
-}
 </style>
 <div class="sidebar">
     <div class="profile-section">
