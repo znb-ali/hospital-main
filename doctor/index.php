@@ -260,12 +260,12 @@ if ($row = $result->fetch_assoc()) {
         <!-- Main Content -->
         <div class="dashboard_content_main">
             <div class="main-content">
-            <h1>Welcome to Your Dashboard,<?= isset($doctor['doctor_name']) ? htmlspecialchars($doctor['doctor_name']) : 'Doctor' ?></h1>
+            <h1>Welcome to Your Dashboard, <?= isset($doctor['doctor_name']) ? htmlspecialchars($doctor['doctor_name']) : 'Doctor' ?></h1>
                 <p>Manage your appointments, patients, profile, and more from here.</p>
                 <div class="card-container">
                     <div class="card">
                         <h2>Appointment Management</h2>
-                        <p>Dr. <?= isset($doctor['doctor_name']) ? htmlspecialchars($doctor['doctor_name']) : 'Doctor' ?>, You have a total of <strong><?= $totalAppointments ?></strong> appointments.</p>
+                        <p><?= isset($doctor['doctor_name']) ? htmlspecialchars($doctor['doctor_name']) : 'Doctor' ?>, You have a total of <strong><?= $totalAppointments ?></strong> appointments.</p>
                         <a href="total_appointment.php" class="btn">View Appointments</a>
                     </div>
                     <div class="card">
