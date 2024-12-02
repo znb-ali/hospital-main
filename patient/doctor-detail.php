@@ -1,6 +1,5 @@
 <?php
 require_once "connection.php";
-
 require_once "mainlinks.php";
 
 // Handle errors
@@ -8,18 +7,31 @@ if (isset($_GET['error']) && $_GET['error'] == 'invalid_id') {
     echo "<div class='alert alert-danger'>Invalid doctor ID. Please try again.</div>";
 }
 
+// Search functionality
+$search_query = '';
+if (isset($_GET['search'])) {
+    $search_query = mysqli_real_escape_string($con, $_GET['search']);
+}
+
 // Fetch doctor data
-$query = "SELECT d.*, s.sp_name, c.city_name FROM doctor_add d
+$query = "SELECT d.*, s.sp_name, c.city_name 
+          FROM doctor_add d
           LEFT JOIN specialization s ON d.specialization_id = s.sp_id
           LEFT JOIN city c ON d.city = c.city_id
           WHERE d.status = 'approved'";
+
+if (!empty($search_query)) {
+    $query .= " AND (d.doctor_name LIKE '%$search_query%' 
+                OR s.sp_name LIKE '%$search_query%' 
+                OR c.city_name LIKE '%$search_query%')";
+}
+
 $sel = mysqli_query($con, $query);
 
 if (!$sel) {
     die("Error fetching doctor data: " . mysqli_error($con));
 }
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -115,6 +127,34 @@ if (!$sel) {
         max-width: 300px;
         margin-bottom: 20px;
     }
+    
+    /* Add search bar styles */
+    .search-container {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .search-container input[type="text"] {
+        width: 60%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+
+    .search-container button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #04304e;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .search-container button:hover {
+        background-color: #084d7b;
+    }
 </style>
 
 </head>
@@ -143,34 +183,49 @@ if (!$sel) {
 
         <div class="dashboard_content_main">
             <h1>Doctors Profile</h1>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <form method="GET" action="">
+                    <input type="text" name="search" placeholder="Search by name, specialization, or city" 
+                           value="<?php echo htmlspecialchars($search_query); ?>">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+
+            <!-- Doctors List -->
             <div class="row">
-                <?php while ($row = mysqli_fetch_assoc($sel)): ?>
-                    <div class="col-lg-5 col-md-5 col-sm-6 mx-auto mb-4">
-                        <div class="card">
-                            <div class="post-image">
-                                <?php if (!empty($row['file_name'])): ?>
-                                    <img src="../<?php echo $row['file_name']; ?>" alt="<?php echo $row['doctor_name']; ?>">
-                                <?php else: ?>
-                                    <img src="default-doctor.jpg" alt="Default Doctor">
-                                <?php endif; ?>
-                            </div>
-                            <div class="card-body">
-                                <h5>Name: <?php echo $row['doctor_name'] ?? 'N/A'; ?></h5>
-                                <p>
-                                    <strong>Email:</strong> <?php echo $row['doctor_email'] ?? 'N/A'; ?><br>
-                                    <strong>Phone:</strong> <?php echo $row['doctor_phone'] ?? 'N/A'; ?><br>
-                                    <strong>Specialization:</strong> <?php echo $row['sp_name'] ?? 'N/A'; ?><br>
-                                    <strong>City:</strong> <?php echo $row['city_name'] ?? 'N/A'; ?><br>
-                                    <strong>Days:</strong> <?php echo $row['doctor_days'] ?? 'N/A'; ?><br>
-                                    <strong>Timing:</strong> <?php echo $row['timing'] ?? 'N/A'; ?>
-                                </p>
-                                <a href="appointment.php?id=<?php echo $row['id']; ?>" class="btn-outline-info">Book Appointment</a>
+                <?php if (mysqli_num_rows($sel) > 0): ?>
+                    <?php while ($row = mysqli_fetch_assoc($sel)): ?>
+                        <div class="col-lg-5 col-md-5 col-sm-6 mx-auto mb-4">
+                            <div class="card">
+                                <div class="post-image">
+                                    <?php if (!empty($row['file_name'])): ?>
+                                        <img src="../<?php echo $row['file_name']; ?>" alt="<?php echo $row['doctor_name']; ?>">
+                                    <?php else: ?>
+                                        <img src="default-doctor.jpg" alt="Default Doctor">
+                                    <?php endif; ?>
+                                </div>
+                                <div class="card-body">
+                                    <h5>Name: <?php echo $row['doctor_name'] ?? 'N/A'; ?></h5>
+                                    <p>
+                                        <strong>Email:</strong> <?php echo $row['doctor_email'] ?? 'N/A'; ?><br>
+                                        <strong>Phone:</strong> <?php echo $row['doctor_phone'] ?? 'N/A'; ?><br>
+                                        <strong>Specialization:</strong> <?php echo $row['sp_name'] ?? 'N/A'; ?><br>
+                                        <strong>City:</strong> <?php echo $row['city_name'] ?? 'N/A'; ?><br>
+                                        <strong>Days:</strong> <?php echo $row['doctor_days'] ?? 'N/A'; ?><br>
+                                        <strong>Timing:</strong> <?php echo $row['timing'] ?? 'N/A'; ?>
+                                    </p>
+                                    <a href="appointment.php?id=<?php echo $row['id']; ?>" class="btn-outline-info">Book Appointment</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                <?php endwhile; ?>
+                    <?php endwhile; ?>
+                <?php else: ?>
+                    <p class="text-center">No doctors found matching your search criteria.</p>
+                <?php endif; ?>
             </div>
-        </div>
+
     </div>
 </div>
 
