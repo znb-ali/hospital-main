@@ -75,7 +75,7 @@
 
     .btn {
         background-color: #084d7b;
-        color: white;
+        color: #fff;
         padding: 12px 20px;
         border: none;
         border-radius: 5px;
@@ -85,7 +85,9 @@
     }
 
     .btn:hover {
-        background-color: #04304e;
+        background-color: #bcddf7;
+        color: #333;
+        border: #bcddf7;
     }
 
     .alert-danger {
@@ -144,7 +146,7 @@
         <input type="email" name="patient_email" placeholder="Patient Email" class="form-control my-3" required>
         <input type="text" name="patient_phone" placeholder="Patient Phone" class="form-control my-3" required>
         <input type="password" name="patient_password" placeholder="Patient Password" class="form-control my-3" required>
-        <button type="submit" name="btn_patient" class="btn btn-outline-info">Add Patient</button>
+        <button type="submit" name="btn_patient" class="btn ">Add Patient</button>
     </form>
 
             </div>

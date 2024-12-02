@@ -46,10 +46,16 @@ if (isset($_GET['id'])) {
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+            <div id="loading-icon"><img src="images/new_care.png" alt=""></div>
         </div>
     </div>
     <!-- Preloader End -->
+
+     <!-- Magic Cursor Start -->
+     <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+    <!-- Magic Cursor End -->
 
     <!-- Header Start -->
     <?php require_once 'linkheader.php'?>

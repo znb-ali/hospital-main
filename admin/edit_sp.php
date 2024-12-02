@@ -141,7 +141,7 @@ body, html {
     outline: none;
 }
 
-.main-content .btn {
+.main-content .btn_edit_sp {
     width: 100%;
     padding: 10px 15px;
     font-size: 16px;
@@ -153,8 +153,9 @@ body, html {
     transition: background-color 0.3s ease;
 }
 
-.main-content .btn:hover {
-    background-color: #04304e;
+.main-content .btn_edit_sp:hover {
+    background-color: #bcddf7;
+    color: #333;
 }
 
 .main-content .btn:active {
@@ -231,7 +232,7 @@ body, html {
                     <label for="sp_name" class="form-label">Specialization</label>
                     <input type="text" name="sp_name" class="form-control" value="<?php echo $sp['sp_name']; ?>" required>
                 </div>
-                <button type="submit" class="btn btn-outline-info">Update Specialization</button>
+                <button type="submit" class="btn_edit_sp">Update Specialization</button>
             </form>
 
                 </div>

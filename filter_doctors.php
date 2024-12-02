@@ -40,6 +40,7 @@ if (!$sel) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,12 +54,14 @@ if (!$sel) {
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
         }
+
         .card-deck {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             justify-content: center;
         }
+
         .card {
             width: calc(30% - 20px);
             min-width: 250px;
@@ -66,52 +69,57 @@ if (!$sel) {
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
         }
+
         .card img {
             height: 180px;
             background-color: #f8f9fa;
             object-fit: contain;
-        }.card-body {
-    text-align: left;
-    padding: 15px;
-}
+        }
 
-.card-body h5.card-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #084d7b;
-    margin-bottom: 10px;
-}
+        .card-body {
+            text-align: left;
+            padding: 15px;
+        }
 
-.card-body p.card-text {
-    color: #555;
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
+        .card-body h5.card-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #084d7b;
+            margin-bottom: 10px;
+        }
 
-.card-body p.card-text strong {
-    font-weight: 600;
-    color: #04304e;
-}
+        .card-body p.card-text {
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
 
-.btn-primary {
-    background-color: #084d7b;
-    border: none;
-    transition: background-color 0.3s ease;
-}
+        .card-body p.card-text strong {
+            font-weight: 600;
+            color: #04304e;
+        }
 
-.btn-primary:hover {
-    background-color: #04304e;
-}
+        .btn-primary {
+            background-color: #084d7b;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
 
-.btn-sm {
-    font-size: 14px;
-    padding: 6px 12px;
-}
+        .btn-primary:hover {
+            background-color: #bcddf7;
+            color: #333;
+            border: #bcddf7;
+        }
 
+        .btn-sm {
+            font-size: 14px;
+            padding: 6px 12px;
+        }
     </style>
 </head>
+
 <body class="tt-magic-cursor">
-    
+
     <!-- Preloader Start -->
     <div class="preloader">
         <div class="loading-container">
@@ -128,65 +136,66 @@ if (!$sel) {
     <!-- Magic Cursor End -->
 
 
-<?php require_once "linkheader.php"; ?>
+    <?php require_once "linkheader.php"; ?>
 
-<div class="container my-5">
-    <div class="search-section">
-        <h2 class="mb-4 text-center">Find Your Doctor</h2>
-        <form method="GET" action="" class="row g-3">
-            <div class="col-md-5">
-                <select name="sp_id" class="form-select">
-                    <option value="0">All specializations</option>
-                    <?php while ($row = mysqli_fetch_assoc($specialization_result)): ?>
-                        <option value="<?php echo $row['sp_id']; ?>" <?php echo $sp_id == $row['sp_id'] ? 'selected' : ''; ?>>
-                            <?php echo $row['sp_name']; ?>
-                        </option>
-                    <?php endwhile; ?>
-                </select>
-            </div>
-            <div class="col-md-5">
-                <select name="city_id" class="form-select">
-                    <option value="0">All Cities</option>
-                    <?php while ($row = mysqli_fetch_assoc($city_result)): ?>
-                        <option value="<?php echo $row['city_id']; ?>" <?php echo $city_id == $row['city_id'] ? 'selected' : ''; ?>>
-                            <?php echo $row['city_name']; ?>
-                        </option>
-                    <?php endwhile; ?>
-                </select>
-            </div>
-            <div class="col-md-2">
-                <button type="submit" class="btn btn-primary w-100">Search</button>
-            </div>
-        </form>
-    </div>
-
-    <div class="results-section">
-        <h2 class="mb-4 text-center">Search Results</h2>
-        <div class="card-deck">
-            <?php while ($row = mysqli_fetch_assoc($sel)): ?>
-                <div class="card">
-                    <?php if (!empty($row['file_name'])): ?>
-                        <img src="<?php echo $row['file_name']; ?>" alt="<?php echo $row['doctor_name']; ?>" class="card-img-top">
-                    <?php else: ?>
-                        <img src="default-doctor.jpg" alt="Doctor Image" class="card-img-top">
-                    <?php endif; ?>
-                    <div class="card-body">
-                        <h5 class="card-title"><?php echo $row["doctor_name"] ?? 'N/A'; ?></h5>
-                        <p class="card-text">
-                            <strong>Email:</strong> <?php echo $row["doctor_email"] ?? 'N/A'; ?><br>
-                            <strong>Phone:</strong> <?php echo $row["doctor_phone"] ?? 'N/A'; ?><br>
-                            <strong>Specialization:</strong> <?php echo $row["sp_name"] ?? 'N/A'; ?><br>
-                            <strong>City:</strong> <?php echo $row["city_name"] ?? 'N/A'; ?><br>
-                            <strong>Available:</strong> <?php echo $row["doctor_days"] ?? 'N/A'; ?><br>
-                            <strong>Timing:</strong> <?php echo $row["timing"] ?? 'N/A'; ?>
-                        </p>
-                    </div>
+    <div class="container my-5">
+        <div class="search-section">
+            <h2 class="mb-4 text-center">Find Your Doctor</h2>
+            <form method="GET" action="" class="row g-3">
+                <div class="col-md-5">
+                    <select name="sp_id" class="form-select">
+                        <option value="0">All specializations</option>
+                        <?php while ($row = mysqli_fetch_assoc($specialization_result)): ?>
+                            <option value="<?php echo $row['sp_id']; ?>" <?php echo $sp_id == $row['sp_id'] ? 'selected' : ''; ?>>
+                                <?php echo $row['sp_name']; ?>
+                            </option>
+                        <?php endwhile; ?>
+                    </select>
                 </div>
-            <?php endwhile; ?>
+                <div class="col-md-5">
+                    <select name="city_id" class="form-select">
+                        <option value="0">All Cities</option>
+                        <?php while ($row = mysqli_fetch_assoc($city_result)): ?>
+                            <option value="<?php echo $row['city_id']; ?>" <?php echo $city_id == $row['city_id'] ? 'selected' : ''; ?>>
+                                <?php echo $row['city_name']; ?>
+                            </option>
+                        <?php endwhile; ?>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary w-100">Search</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="results-section">
+            <h2 class="mb-4 text-center">Search Results</h2>
+            <div class="card-deck">
+                <?php while ($row = mysqli_fetch_assoc($sel)): ?>
+                    <div class="card">
+                        <?php if (!empty($row['file_name'])): ?>
+                            <img src="<?php echo $row['file_name']; ?>" alt="<?php echo $row['doctor_name']; ?>" class="card-img-top">
+                        <?php else: ?>
+                            <img src="default-doctor.jpg" alt="Doctor Image" class="card-img-top">
+                        <?php endif; ?>
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $row["doctor_name"] ?? 'N/A'; ?></h5>
+                            <p class="card-text">
+                                <strong>Email:</strong> <?php echo $row["doctor_email"] ?? 'N/A'; ?><br>
+                                <strong>Phone:</strong> <?php echo $row["doctor_phone"] ?? 'N/A'; ?><br>
+                                <strong>Specialization:</strong> <?php echo $row["sp_name"] ?? 'N/A'; ?><br>
+                                <strong>City:</strong> <?php echo $row["city_name"] ?? 'N/A'; ?><br>
+                                <strong>Available:</strong> <?php echo $row["doctor_days"] ?? 'N/A'; ?><br>
+                                <strong>Timing:</strong> <?php echo $row["timing"] ?? 'N/A'; ?>
+                            </p>
+                        </div>
+                    </div>
+                <?php endwhile; ?>
+            </div>
         </div>
     </div>
-</div>
 
-<?php require_once "jslinks.php"; ?>
+    <?php require_once "jslinks.php"; ?>
 </body>
+
 </html>

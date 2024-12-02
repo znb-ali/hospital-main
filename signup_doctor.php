@@ -85,7 +85,7 @@ if (isset($_POST["btn_doctor"])) {
 
     .btn {
         background-color: #084d7b;
-        color: white;
+        color: #fff;
         padding: 12px 20px;
         border: none;
         border-radius: 5px;
@@ -95,7 +95,9 @@ if (isset($_POST["btn_doctor"])) {
     }
 
     .btn:hover {
-        background-color: #04304e;
+        background-color: #bcddf7;
+        color: #333;
+        border: #bcddf7;;
     }
 
     .alert-danger {
@@ -179,7 +181,7 @@ if (isset($_POST["btn_doctor"])) {
                 </select>
 
                 <input type="file" name="file_name" class="form-control my-4" required>
-                <input type="submit" value="Doctor Add" name="btn_doctor" class="btn btn-outline-info">
+                <input type="submit" value="Doctor Add" name="btn_doctor" class="btn ">
             </form>
 
 

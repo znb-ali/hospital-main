@@ -154,7 +154,7 @@ if ($row = $result->fetch_assoc()) {
 
     .card .btn:hover {
         background-color: #bcddf7;
-        color: black;
+        color: #333;
         border: #bcddf7;
     }
 
@@ -265,7 +265,7 @@ if ($row = $result->fetch_assoc()) {
                 <div class="card-container">
                     <div class="card">
                         <h2>Appointment Management</h2>
-                        <p>Dr. <?= isset($doctor['doctor_name']) ? htmlspecialchars($doctor['doctor_name']) : 'Doctor' ?>, You have a total of <strong><?= $totalAppointments ?></strong> appointments.</p>
+                        <p> <?= isset($doctor['doctor_name']) ? htmlspecialchars($doctor['doctor_name']) : 'Doctor' ?>, You have a total of <strong><?= $totalAppointments ?></strong> appointments.</p>
                         <a href="total_appointment.php" class="btn">View Appointments</a>
                     </div>
                     <div class="card">

@@ -114,11 +114,13 @@ while ($row = mysqli_fetch_assoc($result)) {
         font-size: 14px;
         border-radius: 4px;
         transition: background-color 0.3s ease;
+        cursor: pointer;
     }
 
     .card .btn:hover {
         background-color: #bcddf7;
         color: black;
+        border: #bcddf7 ;
     }
     /* Analytics Section */
     .analytics-section {

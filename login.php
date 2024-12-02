@@ -116,7 +116,7 @@ $stmt_doctor->close();
 
     .btn {
         background-color: #084d7b;
-        color: white;
+        color: #fff;
         padding: 12px 20px;
         border: none;
         border-radius: 5px;
@@ -126,7 +126,9 @@ $stmt_doctor->close();
     }
 
     .btn:hover {
-        background-color: #04304e;
+        background-color: #bcddf7;
+        color: #333;
+        border: #bcddf7;
     }
 
     .alert-danger {
@@ -182,7 +184,7 @@ $stmt_doctor->close();
                 <form method="post">
                     <input type="email" name="user_email" placeholder="Email" class="form-control my-4" required>
                     <input type="password" name="user_pass" placeholder="Password" class="form-control my-4" required>
-                    <input type="submit" name="user_btn" class="btn btn-outline-info my-2" value="Login">
+                    <input type="submit" name="user_btn" class="btn  my-2" value="Login">
                 </form>
             </div>
 <?php require_once "footer.php"; ?>

@@ -26,7 +26,7 @@ if (isset($_GET['id'])) {
     // $update_stmt = $con->prepare($update_sql);
     // $update_stmt->bind_param("i", $appointment_id);
     // $update_stmt->execute();
-    
+
     // Close the database connection
     $stmt->close();
 } else {
@@ -39,6 +39,7 @@ $con->close();
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,47 +79,52 @@ $con->close();
             padding: 10px 15px;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         .appointment-details .btn:hover {
-            background-color: #072e47;
+            background-color: #bcddf7;
+            color: #333;
+            border: #bcddf7 ;
         }
     </style>
 </head>
+
 <body class="tt-magic-cursor">
 
-<div class="dashboard_container">
-    <!-- Include the header file -->
-    <?php include('linkheader.php'); ?>
+    <div class="dashboard_container">
+        <!-- Include the header file -->
+        <?php include('linkheader.php'); ?>
 
-    <div class="dashboard_main">
-        <!-- Sidebar -->
-        <?php include('side.php'); ?>
+        <div class="dashboard_main">
+            <!-- Sidebar -->
+            <?php include('side.php'); ?>
 
-        <!-- Main Content -->
-        <div class="dashboard_content_main">
-            <div class="main-content">
-                <h1>Appointment Details</h1>
+            <!-- Main Content -->
+            <div class="dashboard_content_main">
+                <div class="main-content">
+                    <h1>Appointment Details</h1>
 
-                <!-- Appointment Details -->
-                <div class="appointment-details">
-                    <h2>Appointment Information</h2>
-                    <p><strong>Name:</strong> <?php echo $appointment["name"]; ?></p>
-                    <p><strong>Email:</strong> <?php echo $appointment["email"]; ?></p>
-                    <p><strong>Phone:</strong> <?php echo $appointment["phone"]; ?></p>
-                    <p><strong>Appointment Date:</strong> <?php echo $appointment["date"]; ?></p>
-                    <p><strong>Message:</strong> <?php echo $appointment["message"]; ?></p>
-                    <p><strong>Created At:</strong> <?php echo $appointment["created_at"]; ?></p>
+                    <!-- Appointment Details -->
+                    <div class="appointment-details">
+                        <h2>Appointment Information</h2>
+                        <p><strong>Name:</strong> <?php echo $appointment["name"]; ?></p>
+                        <p><strong>Email:</strong> <?php echo $appointment["email"]; ?></p>
+                        <p><strong>Phone:</strong> <?php echo $appointment["phone"]; ?></p>
+                        <p><strong>Appointment Date:</strong> <?php echo $appointment["date"]; ?></p>
+                        <p><strong>Message:</strong> <?php echo $appointment["message"]; ?></p>
+                        <p><strong>Created At:</strong> <?php echo $appointment["created_at"]; ?></p>
 
-                    <!-- Contact Button (This could be changed to 'Contacted' if already marked) -->
-                    <a href="contact_appointment.php?id=<?php echo $appointment["id"]; ?>" class="btn">Contact</a>
+                        <!-- Contact Button (This could be changed to 'Contacted' if already marked) -->
+                        <a href="contact_appointment.php?id=<?php echo $appointment["id"]; ?>" class="btn">Contact</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<?php require_once "jslinks.php"; ?>
+    <?php require_once "jslinks.php"; ?>
 
 </body>
+
 </html>

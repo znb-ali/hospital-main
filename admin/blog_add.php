@@ -133,15 +133,17 @@
 
         .form-group button {
             background-color: #084d7b;
-            color: white;
+            color: #fff;
             border: none;
             padding: 12px 20px;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
         .form-group button:hover {
-            background-color: #045081;
+            background-color: #bcddf7;
+            color: #333;
         }
 
         /* Image Upload */

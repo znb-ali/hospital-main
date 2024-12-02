@@ -194,7 +194,7 @@
                             <li>Vaccinations and Immunizations</li>
                         </ul>
                         <div class="health-services-btn wow fadeInUp" data-wow-delay="0.75s">
-                            <a href="about.php#" class="btn-default">Get Started</a>
+                            <a href="appointment.php" class="btn-default">Get Started</a>
                         </div>
                     </div>
                     <!-- health Services Content End -->
@@ -268,14 +268,14 @@
                             </figure>
 
                             <!-- Team Social List Start -->
-                            <div class="team-social-list">
+                            <!-- <div class="team-social-list">
                                 <ul>
                                     <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
                                     <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                     <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-twitter"></i></a></li>
                                     <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <!-- Team Social List End -->
                         </div>
                         <!-- Team Image End -->
@@ -303,14 +303,14 @@
                             </figure>
 
                             <!-- Team Social List Start -->
-                            <div class="team-social-list">
+                            <!-- <div class="team-social-list">
                                 <ul>
                                     <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
                                     <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                     <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-twitter"></i></a></li>
                                     <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <!-- Team Social List End -->
                         </div>
                         <!-- Team Image End -->
@@ -338,14 +338,14 @@
                             </figure>
 
                             <!-- Team Social List Start -->
-                            <div class="team-social-list">
+                            <!-- <div class="team-social-list">
                                 <ul>
                                     <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
                                     <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                     <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-twitter"></i></a></li>
                                     <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <!-- Team Social List End -->
                         </div>
                         <!-- Team Image End -->
@@ -373,14 +373,14 @@
                             </figure>
 
                             <!-- Team Social List Start -->
-                            <div class="team-social-list">
+                            <!-- <div class="team-social-list">
                                 <ul>
                                     <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
                                     <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                     <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-twitter"></i></a></li>
                                     <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <!-- Team Social List End -->
                         </div>
                         <!-- Team Image End -->

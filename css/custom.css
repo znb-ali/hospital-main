@@ -32,7 +32,7 @@
 23. Appointment Page css
 24. FAQs Page css
 25. 404 Error Page css 
-26. Responsive css
+26. Responsive css          
 
 -------------------------------------------------------------------------------------- */
 
@@ -42,15 +42,13 @@
 :root{
 	--body-background				: #FFF7F4;
 	--primary-color					: #113243;
-	--text-color					: #000000;
-	--accent-color					: #96d4f0;
+	--text-color					: #191717eb;
+	--accent-color					: #42a4c0;
 	--secondry-color				: #FFFFFF;
 	--transparent-color				: #fffbfbcb;
 	--transparent-secondry-color	: #000000aa;
-	--light-Background				: #113f56;
-	--light-accent-color			: #bcddf7;
-	--light-accent-color			: #0a2e4a;
-
+	--light-Background				: #bcddf7;
+	--light-accent-color			: #113f56;
 	--default-font					: "Figtree", sans-serif;;
 }
 /************************************/
@@ -394,7 +392,7 @@ body{
 
 header.main-header{
 	background-color: var(--primary-color);
-	border-bottom: 1px solid var(--light-Background);
+	border-bottom: 1px solid var(--primary-color);
 	position: relative;
 	z-index: 100;
 }
@@ -418,7 +416,7 @@ header.main-header .header-sticky.active{
 	right: 0;
 	border-radius: 0;
     transform: translateY(0);
-	background: var(--light-Background);
+	background: var(--primary-color);
 	backdrop-filter: blur(30px);
 }
 
@@ -755,7 +753,7 @@ header.main-header .header-sticky.active{
 
 .home-contact-item.highlighted-box{
 	padding: 0;
-	background: var(--accent-color);
+	background: #bcddf7;
     height: 100%;
     display: flex;
     justify-content: flex-end;
@@ -787,7 +785,7 @@ header.main-header .header-sticky.active{
 }
 
 .home-contact-item.highlighted-box .appointment-wrap a:hover{
-	background-color: var(--light-Background);
+	background-color: #59b2db;
 }
 
 .home-contact-item.highlighted-box .appointment-wrap a i{
@@ -1130,7 +1128,7 @@ header.main-header .header-sticky.active{
 
 .how-we-work{
 	padding: 100px 0 70px;
-	background: var(--light-accent-color);
+	background: #bcddf7 ;
 }
 
 .how-we-work .section-title{
