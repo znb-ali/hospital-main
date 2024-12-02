@@ -24,11 +24,10 @@
 							<!-- Footer Social Links Start -->
 							<div class="footer-social-links">
 								<ul>
-									<li><a href="index.php#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-									<li><a href="index.php#"><i class="fa-brands fa-youtube"></i></a></li>
-									<li><a href="index.php#"><i class="fa-brands fa-twitter"></i></a></li>
-									<li><a href="index.php#"><i class="fa-brands fa-instagram"></i></a></li>
-									<li><a href="index.php#"><i class="fa-brands fa-facebook-f"></i></a></li>
+									<li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+									<li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+									<li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+									<li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
 								</ul>
 							</div>
 							<!-- Footer Social Links End -->

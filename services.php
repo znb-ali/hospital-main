@@ -189,7 +189,7 @@
                             </ul>
                         </div>
                         <div class="services-item-btn">
-                            <a href="show_by_specialization.php?id=7" class="btn-default">View Doctors</a>
+                            <a href="show_by_specialization.php?id=8" class="btn-default">View Doctors</a>
                         </div>
                     </div>
                     <!-- Our Service Item End -->
@@ -316,7 +316,7 @@
                 <div class="col-md-6">
                     <!-- Section Title Content Start -->
                     <div class="section-title-content">
-                        <p class="wow fadeInUp">At our medipro , we pride ourselves on fostering a culture of care, where every individual’s well-being is our utmost priority. Our commitment to excellence in healthcare is grounded.</p>
+                        <p class="wow fadeInUp">At our care , we pride ourselves on fostering a culture of care, where every individual’s well-being is our utmost priority. Our commitment to excellence in healthcare is grounded.</p>
                     </div>
                     <!-- Section Title Content End -->
                 </div>

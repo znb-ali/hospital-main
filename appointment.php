@@ -207,10 +207,9 @@
                             <!-- Team Social List Start -->
                             <div class="team-social-list">
                                 <ul>
-                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.instagram.com/" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
                             <!-- Team Social List End -->
@@ -220,8 +219,8 @@
                         <!-- Team Body Start -->
                         <div class="team-body">
                             <div class="team-content">
-                                <h3>family physician</h3>
-                                <h2><a href="about.php#">dr. elizabeth foster</a></h2>
+                                <h3>Pathologists </h3>
+                                <h2>Dr.Tahira Meer</h2>
                                 <p>Compassionate care for all ages.</p>
                             </div>
                         </div>
@@ -239,13 +238,12 @@
                                 <img src="images/team-2.jpg" alt="">
                             </figure>
 
-                            <!-- Team Social List Start -->
-                            <div class="team-social-list">
+                          <!-- Team Social List Start -->
+                          <div class="team-social-list">
                                 <ul>
-                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.instagram.com/" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
                             <!-- Team Social List End -->
@@ -255,8 +253,8 @@
                         <!-- Team Body Start -->
                         <div class="team-body">
                             <div class="team-content">
-                                <h3>surgeon</h3>
-                                <h2><a href="about.php#">dr. david lee</a></h2>
+                                <h3>Neurologists</h3>
+                                <h2>Dr.Imran Mehmood</h2>
                                 <p>Skillful hands, transforming lives.</p>
                             </div>
                         </div>
@@ -274,13 +272,12 @@
                                 <img src="images/team-3.jpg" alt="">
                             </figure>
 
-                            <!-- Team Social List Start -->
-                            <div class="team-social-list">
+                           <!-- Team Social List Start -->
+                           <div class="team-social-list">
                                 <ul>
-                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.instagram.com/" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
                             <!-- Team Social List End -->
@@ -290,8 +287,8 @@
                         <!-- Team Body Start -->
                         <div class="team-body">
                             <div class="team-content">
-                                <h3>cardiologist</h3>
-                                <h2><a href="about.php#">dr. ava white</a></h2>
+                                <h3>Cardiologist</h3>
+                                <h2>Dr. Maria Abid</h2>
                                 <p>Mental wellness and guiding.</p>
                             </div>
                         </div>
@@ -309,13 +306,12 @@
                                 <img src="images/team-4.jpg" alt="">
                             </figure>
 
-                            <!-- Team Social List Start -->
-                            <div class="team-social-list">
+                          <!-- Team Social List Start -->
+                          <div class="team-social-list">
                                 <ul>
-                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="about.php#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.instagram.com/" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
                             <!-- Team Social List End -->
@@ -325,8 +321,8 @@
                         <!-- Team Body Start -->
                         <div class="team-body">
                             <div class="team-content">
-                                <h3>dermatologist</h3>
-                                <h2><a href="about.php#">Dr. Daniel Brown</a></h2>
+                                <h3>Pathologists</h3>
+                                <h2>Dr. Tariq Muhammad</h2>
                                 <p>Focuses on skin, hair disorders.</p>
                             </div>
                         </div>
