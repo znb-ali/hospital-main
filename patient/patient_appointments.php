@@ -30,7 +30,7 @@ $result = $stmt->get_result();
     <link rel="stylesheet" href="css/layout.css">
     <?php require_once "mainlinks.php"; ?>
     <style>
-
+        
         .main-content h1 {
             font-size: 50px;
             font-weight: bold;
@@ -101,34 +101,15 @@ $result = $stmt->get_result();
 .table tbody tr:hover {
     background-color: #f1f1f1; /* Light grey background on hover */
 }
+
     </style>
 </head>
 <body class="tt-magic-cursor">
-
-<!-- Preloader Start -->
-<div class="preloader">
-    <div class="loading-container">
-        <div class="loading"></div>
-        <div id="loading-icon"><img src="images/new_care.png" alt=""></div>
-    </div>
-</div>
-<!-- Preloader End -->
-
-<!-- Magic Cursor Start -->
-<div id="magic-cursor">
-    <div id="ball"></div>
-</div>
-<!-- Magic Cursor End -->
-
+    <!-- Preloader, Magic Cursor, Header, Sidebar, and Main Content -->
     <div class="dashboard_container">
-        <!-- Include the header file -->
         <?php include('linkheader.php'); ?>
-
         <div class="dashboard_main">
-            <!-- Sidebar -->
             <?php include('side.php'); ?>
-
-            <!-- Main Content -->
             <div class="dashboard_content_main">
                 <div class="main-content">
                     <h1>My Appointments</h1>
@@ -137,7 +118,7 @@ $result = $stmt->get_result();
                             <thead>
                                 <tr>
                                     <th>Doctor's Name</th>
-                                    <th>Specialist</th> <!-- New column for specialist -->
+                                    <th>Specialist</th>
                                     <th>Appointment Date</th>
                                     <th>Appointment Time</th>
                                     <th>Status Message</th>
@@ -147,6 +128,19 @@ $result = $stmt->get_result();
                                 <?php
                                 if ($result->num_rows > 0) {
                                     while ($appointment = $result->fetch_assoc()) {
+                                        // Convert appointment date to DateTime object
+                                        $appointmentDate = new DateTime($appointment['appointment_date']); // Convert appointment date
+                                        $currentDate = new DateTime(); // Get current date for comparison
+
+                                        // Default style for the appointment date
+                                        $appointmentDateStyle = '';
+
+                                        // Check if the appointment date has passed
+                                        if ($appointmentDate < $currentDate) {
+                                            // If the appointment date has passed, apply red color style
+                                            $appointmentDateStyle = 'color: red; font-weight: bold;';
+                                        }
+
                                         // Default style for the Status Message column
                                         $statusMessageStyle = 'background-color: #f0f0f0;'; // Default background color
 
@@ -164,12 +158,11 @@ $result = $stmt->get_result();
                                             $statusMessageStyle = 'background-color: #fff3cd; color: #856404;';
                                             $statusMessage = $appointment['status_message'] ?? 'Your appointment is pending approval by the doctor.';
                                         }
-
                                         ?>
                                         <tr>
                                             <td><?php echo htmlspecialchars($appointment['doctor_name']); ?></td>
-                                            <td><?php echo htmlspecialchars($appointment['sp_name']); ?></td> <!-- Display specialist -->
-                                            <td><?php echo htmlspecialchars($appointment['appointment_date']); ?></td>
+                                            <td><?php echo htmlspecialchars($appointment['sp_name']); ?></td>
+                                            <td style="<?php echo $appointmentDateStyle; ?>"><?php echo htmlspecialchars($appointment['appointment_date']); ?></td>
                                             <td><?php echo htmlspecialchars($appointment['appointment_time']); ?></td>
                                             <td style="<?php echo $statusMessageStyle; ?>">
                                                 <?php echo htmlspecialchars($statusMessage); ?>
