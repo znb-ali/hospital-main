@@ -81,22 +81,7 @@ if ($result_appointment->num_rows > 0) {
     }
     </style>
 </head>
-<body class="tt-magic-cursor">
-
-<!-- Preloader Start -->
-<div class="preloader">
-    <div class="loading-container">
-        <div class="loading"></div>
-        <div id="loading-icon"><img src="images/new_care.png" alt=""></div>
-    </div>
-</div>
-<!-- Preloader End -->
-
-<!-- Magic Cursor Start -->
-<div id="magic-cursor">
-    <div id="ball"></div>
-</div>
-<!-- Magic Cursor End -->
+<body >
 
     
 <div class="dashboard_container">
@@ -131,10 +116,6 @@ if ($result_appointment->num_rows > 0) {
             <tr>
                 <th>Appointment Time</th>
                 <td><?php echo $appointment_details['appointment_time']; ?></td>
-            </tr>
-            <tr>
-                <th>Status</th>
-                <td><?php echo $appointment_details['status']; ?></td>
             </tr>
         </table>
             </div>

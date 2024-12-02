@@ -4,8 +4,13 @@ require_once 'connection.php'; // Make sure this file contains the correct DB co
 
 $doctor_email = $_SESSION['doctor'];
 
-// Fetch doctor details from the database
-$sql = "SELECT * FROM doctor_add WHERE doctor_email = ?";
+// Fetch doctor details including city and specialization names
+$sql = "
+    SELECT d.*, c.city_name, s.sp_name 
+    FROM doctor_add d
+    LEFT JOIN city c ON d.city = c.city_id
+    LEFT JOIN specialization s ON d.specialization_id = s.sp_id
+    WHERE d.doctor_email = ?";
 $stmt = $con->prepare($sql);
 $stmt->bind_param("s", $doctor_email);
 $stmt->execute();
@@ -17,7 +22,6 @@ if (!$doctor) {
     header("Location: ../login.php");
     exit();
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -215,11 +219,11 @@ if (!$doctor) {
         <p><strong>Name:</strong> <?= htmlspecialchars($doctor['doctor_name']); ?></p>
         <p><strong>Email:</strong> <?= htmlspecialchars($doctor['doctor_email']); ?></p>
         <p><strong>Phone:</strong> <?= htmlspecialchars($doctor['doctor_phone']); ?></p>
-        <p><strong>Specialization:</strong> <?= htmlspecialchars($doctor['specialization_id'] ?? 'N/A'); ?></p>
+        <p><strong>Specialization:</strong> <?= htmlspecialchars($doctor['sp_name'] ?? 'N/A'); ?></p>
         <p><strong>Availability:</strong> <?= htmlspecialchars($doctor['doctor_days']); ?></p>
         <p><strong>Timing:</strong> <?= htmlspecialchars($doctor['timing']); ?></p>
         <p><strong>Status:</strong> <?= htmlspecialchars($doctor['status']); ?></p>
-        <p><strong>City:</strong> <?= htmlspecialchars($doctor['city']); ?></p>
+        <p><strong>City:</strong> <?= htmlspecialchars($doctor['city_name']); ?></p>
     </div>
 </div>
         
