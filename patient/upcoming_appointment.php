@@ -1,161 +1,124 @@
 <?php
-// Include the necessary files
-require_once 'connection.php';
+require_once "connection.php";
 
-// Fetch success and error messages (if any)
-$success = isset($_SESSION['success']) ? $_SESSION['success'] : '';
-$error = isset($_SESSION['error']) ? $_SESSION['error'] : '';
+// Ensure the patient is logged in and retrieve their information
+$query = "SELECT * FROM patient_reg WHERE patient_email = ?";
+$stmt = $con->prepare($query);
+$stmt->bind_param("s", $_SESSION["patient"]);
+$stmt->execute();
+$patient_info = $stmt->get_result()->fetch_assoc();
+$patient_id = $patient_info['id'];
 
-// Clear the session messages after displaying them
-unset($_SESSION['success']);
-unset($_SESSION['error']);
-
-// Query to fetch upcoming appointments
-$query = "SELECT * FROM `doc_patient_appointments` 
-          WHERE `patient_id` = ? 
-          AND `status` = 'approved' 
-          AND `appointment_date` >= CURDATE() 
-          ORDER BY `appointment_date` ASC";
-
-// Prepare and execute the query
+// Fetch upcoming and approved appointments
+$query = "
+    SELECT a.appointment_date, a.appointment_time, a.status, a.status_message, d.doctor_name, s.sp_name 
+    FROM doc_patient_appointments a 
+    JOIN doctor_add d ON a.doctor_id = d.id
+    JOIN specialization s ON d.specialization_id = s.sp_id
+    WHERE a.patient_id = ? AND a.status = 'Approved' AND a.appointment_date >= CURDATE()
+    ORDER BY a.appointment_date, a.appointment_time";
 $stmt = $con->prepare($query);
 $stmt->bind_param("i", $patient_id);
 $stmt->execute();
 $result = $stmt->get_result();
-$appointments = $result->fetch_all(MYSQLI_ASSOC);
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patient Dashboard - Upcoming Appointments</title>
+    <title>Patient Portal - Upcoming Appointments</title>
     <link rel="stylesheet" href="css/layout.css">
-    
-    <style>
-    /* Adjustments for Main Content in the New Layout */
-    .main-content {
-        padding: 40px 20px;
-        background-color: #f4f6f9;
-        min-height: 100vh;
-        box-sizing: border-box;
-    }
-
-    .main-content h1 {
-        font-size: 28px;
-        color: #084d7b;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    .main-content p {
-        font-size: 16px;
-        color: #333;
-        text-align: center;
-        margin-bottom: 25px;
-    }
-
-    /* Card Styling */
-    .card-container {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    .card {
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        text-align: center;
-        width: 300px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .card h2 {
-        font-size: 20px;
-        color: #084d7b;
-        margin-bottom: 10px;
-    }
-
-    .card p {
-        font-size: 14px;
-        color: #555;
-        margin-bottom: 15px;
-    }
-
-    .card .btn {
-        display: inline-block;
-        background-color: #113f56;
-        color: #fff;
-        padding: 10px 20px;
-        text-decoration: none;
-        font-size: 14px;
-        border-radius: 4px;
-        transition: background-color 0.3s ease;
-    }
-
-    .card .btn:hover {
-        background-color:#bcddf7;
-    }
-    </style>
-
     <?php require_once "mainlinks.php"; ?>
+    <style>
+        .main-content h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: #084d7b;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .main-content {
+            padding: 40px 20px;
+            background-color: #f4f6f9;
+            min-height: 100vh;
+        }
+
+        .table-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px 20px;
+            margin-top: 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table th, .table td {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+        }
+
+        .table th {
+            background-color: #084d7b;
+            color: white;
+        }
+
+        .table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
 </head>
 <body class="tt-magic-cursor">
 
-<!-- Preloader Start -->
-<div class="preloader">
-    <div class="loading-container">
-        <div class="loading"></div>
-        <div id="loading-icon"><img src="images/new_care.png" alt=""></div>
-    </div>
-</div>
-<!-- Preloader End -->
-
-<!-- Magic Cursor Start -->
-<div id="magic-cursor">
-    <div id="ball"></div>
-</div>
-<!-- Magic Cursor End -->
-
+<!-- Include header and sidebar -->
 <div class="dashboard_container">
-    <!-- Include the header file -->
     <?php include('linkheader.php'); ?>
-
     <div class="dashboard_main">
-        <!-- Sidebar -->
         <?php include('side.php'); ?>
 
         <!-- Main Content -->
         <div class="dashboard_content_main">
             <div class="main-content">
                 <h1>Upcoming Appointments</h1>
-                <p>View your upcoming approved appointments below:</p>
-
-                <!-- Display appointments -->
-                <?php if (count($appointments) > 0): ?>
-                    <div class="card-container">
-                        <?php foreach ($appointments as $appointment): ?>
-                            <div class="card">
-                                <h2>Appointment with Doctor ID: <?= htmlspecialchars($appointment['doctor_id']); ?></h2>
-                                <p>Date: <?= htmlspecialchars($appointment['appointment_date']); ?></p>
-                                <p>Time: <?= htmlspecialchars($appointment['appointment_time']); ?></p>
-                                <p>Status: <?= htmlspecialchars($appointment['status']); ?></p>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-                <?php else: ?>
-                    <p>No upcoming appointments found.</p>
-                <?php endif; ?>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Doctor's Name</th>
+                                <th>Specialist</th>
+                                <th>Appointment Date</th>
+                                <th>Appointment Time</th>
+                                <th>Status Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            if ($result->num_rows > 0) {
+                                while ($appointment = $result->fetch_assoc()) {
+                                    ?>
+                                    <tr>
+                                        <td><?php echo htmlspecialchars($appointment['doctor_name']); ?></td>
+                                        <td><?php echo htmlspecialchars($appointment['sp_name']); ?></td>
+                                        <td><?php echo htmlspecialchars($appointment['appointment_date']); ?></td>
+                                        <td><?php echo htmlspecialchars($appointment['appointment_time']); ?></td>
+                                        <td><?php echo htmlspecialchars($appointment['status_message'] ?? 'Your appointment is confirmed.'); ?></td>
+                                    </tr>
+                                <?php }
+                            } else {
+                                echo "<tr><td colspan='5' class='text-center'>No upcoming appointments found.</td></tr>";
+                            }
+                            ?>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
