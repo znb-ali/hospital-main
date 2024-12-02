@@ -80,7 +80,7 @@ if ($row = $result->fetch_assoc()) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor Dashboard</title>
-    <link rel="stylesheet" href="css/layout.css">
+    <!-- <link rel="stylesheet" href="css/layout.css"> -->
 
     <style>
     /* Adjustments for Main Content in the New Layout */
@@ -154,7 +154,7 @@ if ($row = $result->fetch_assoc()) {
 
     .card .btn:hover {
         background-color: #bcddf7;
-        color: #333;
+        color: black;
         border: #bcddf7;
     }
 
@@ -187,7 +187,7 @@ if ($row = $result->fetch_assoc()) {
 
 
 /* Statistics Cards */
-.dashboard-container {
+.stat-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -265,7 +265,7 @@ if ($row = $result->fetch_assoc()) {
                 <div class="card-container">
                     <div class="card">
                         <h2>Appointment Management</h2>
-                        <p> <?= isset($doctor['doctor_name']) ? htmlspecialchars($doctor['doctor_name']) : 'Doctor' ?>, You have a total of <strong><?= $totalAppointments ?></strong> appointments.</p>
+                        <p>Dr. <?= isset($doctor['doctor_name']) ? htmlspecialchars($doctor['doctor_name']) : 'Doctor' ?>, You have a total of <strong><?= $totalAppointments ?></strong> appointments.</p>
                         <a href="total_appointment.php" class="btn">View Appointments</a>
                     </div>
                     <div class="card">
@@ -275,7 +275,7 @@ if ($row = $result->fetch_assoc()) {
                     </div>
                 </div>
                 <!-- Statistics -->
-                <div class="dashboard-container">
+                <div class="stat-container">
     <div class="stat-card">
         <h4>Accepted Appointments</h4>
         <p><?= $acceptedAppointments ?></p>
