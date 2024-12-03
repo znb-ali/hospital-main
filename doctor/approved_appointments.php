@@ -168,7 +168,7 @@ $current_date = date('Y-m-d');
                 <td><?php echo $appointment['appointment_date']; ?></td>
                 <td><?php echo $appointment['appointment_time']; ?></td>
                 <td><?php echo $appointment['status']; ?></td>
-                <td>
+                
                 <td>
     <a href="view_patient.php?id=<?php echo $appointment['id']; ?>" class="btn btn-info">View</a>
 </td>
