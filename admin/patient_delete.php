@@ -1,10 +1,5 @@
 <?php
-session_start();
-// Check if the admin is logged in
-if (!isset($_SESSION["admin"])) {
-    header('location:../login.php');
-    exit();
-}
+
 
 require_once "connection.php";
 

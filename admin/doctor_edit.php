@@ -240,9 +240,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             ?>
                         </select>
 
-                        <!-- File Upload (optional) -->
-                        <input type="file" name="file_name" class="form-control my-4">
-
                         <!-- Submit Button -->
                         <input type="submit" value="Update Doctor" name="btn_doctor" class="btn_edit_doctor">
                     </form>

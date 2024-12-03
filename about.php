@@ -194,7 +194,7 @@
                             <li>Vaccinations and Immunizations</li>
                         </ul>
                         <div class="health-services-btn wow fadeInUp" data-wow-delay="0.75s">
-                            <a href="appointment.php" class="btn-default">Get Started</a>
+                            <a href="contact.php" class="btn-default">Get Started</a>
                         </div>
                     </div>
                     <!-- health Services Content End -->
@@ -245,6 +245,158 @@
         </div>
     </div>
     <!-- health Services Section End  -->
+
+    <!-- Meet Our Team Start -->
+    <div class="meet-our-team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12">
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">our best doctor</h3>
+                        <h2 class="text-anime-style-3">Meet Our Doctors.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.25s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="images/team-5.jpg" alt="">
+                            </figure>
+
+                            <!-- Team Social List Start -->
+                            <div class="team-social-list">
+                                <ul>
+                                    <li><a href="https://www.instagram.com/" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social List End -->
+                        </div>
+                        <!-- Team Image End -->
+
+                        <!-- Team Body Start -->
+                        <div class="team-body">
+                            <div class="team-content">
+                                <h3>Pathologists </h3>
+                                <h2>Dr.Tahira Meer</h2>
+                                <p>Compassionate care for all ages.</p>
+                            </div>
+                        </div>
+                        <!-- Team Body End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.25s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="images/team-2.jpg" alt="">
+                            </figure>
+
+                          <!-- Team Social List Start -->
+                          <div class="team-social-list">
+                                <ul>
+                                    <li><a href="https://www.instagram.com/" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social List End -->
+                        </div>
+                        <!-- Team Image End -->
+
+                        <!-- Team Body Start -->
+                        <div class="team-body">
+                            <div class="team-content">
+                                <h3>Neurologists</h3>
+                                <h2>Dr.Imran Mehmood</h2>
+                                <p>Skillful hands, transforming lives.</p>
+                            </div>
+                        </div>
+                        <!-- Team Body End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.5s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="images/team-3.jpg" alt="">
+                            </figure>
+
+                           <!-- Team Social List Start -->
+                           <div class="team-social-list">
+                                <ul>
+                                    <li><a href="https://www.instagram.com/" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social List End -->
+                        </div>
+                        <!-- Team Image End -->
+
+                        <!-- Team Body Start -->
+                        <div class="team-body">
+                            <div class="team-content">
+                                <h3>Cardiologist</h3>
+                                <h2>Dr. Maria Abid</h2>
+                                <p>Mental wellness and guiding.</p>
+                            </div>
+                        </div>
+                        <!-- Team Body End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <!-- Team Member Item Start -->
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.75s">
+                        <!-- Team Image Start -->
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="images/team-4.jpg" alt="">
+                            </figure>
+
+                          <!-- Team Social List Start -->
+                          <div class="team-social-list">
+                                <ul>
+                                    <li><a href="https://www.instagram.com/" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Team Social List End -->
+                        </div>
+                        <!-- Team Image End -->
+
+                        <!-- Team Body Start -->
+                        <div class="team-body">
+                            <div class="team-content">
+                                <h3>Pathologists</h3>
+                                <h2>Dr. Tariq Muhammad</h2>
+                                <p>Focuses on skin, hair disorders.</p>
+                            </div>
+                        </div>
+                        <!-- Team Body End -->
+                    </div>
+                    <!-- Team Member Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Meet Our Team End -->
 
     <!-- Testimonial Section Satrt -->
     <div class="clients-testimonials">

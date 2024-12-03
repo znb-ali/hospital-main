@@ -21,12 +21,14 @@ if (isset($_POST["btn_doctor"])) {
 
     // Move the uploaded file
     if (move_uploaded_file($tmp_name, $target_file)) {
-        // Prepare the insert query
-        $stmt = $con->prepare("INSERT INTO doctor_add (doctor_name, doctor_email, doctor_phone, specialization_id, doctor_days, timing, password, file_name, status, city, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'pending', ?, NOW())");
-        $stmt->bind_param("sssssssss", $doctor_name, $doctor_email, $doctor_phone, $doctor_sp, $doctor_days, $doctor_time, $doctor_pass, $target_file, $doctor_city);
-        
+         // Prepare the insert query
+         $stmt = $con->prepare("INSERT INTO doctor_add (doctor_name, doctor_email, doctor_phone, specialization_id, doctor_days, timing, password, file_name, status, city, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'approved', ?, NOW())");
+         $stmt->bind_param("sssssssss", $doctor_name, $doctor_email, $doctor_phone, $doctor_sp, $doctor_days, $doctor_time, $doctor_pass, $target_file, $doctor_city);
+         
         if ($stmt->execute()) {
             echo "<div class='alert alert-success'>user Inserted. </div>";
+            header("Location: doctor.php");
+
         } else {
             echo "<div class='alert alert-danger'>ERROR in data insertion: " . $stmt->error . "</div>";
         }
